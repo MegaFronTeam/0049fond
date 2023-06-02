@@ -68,11 +68,13 @@
 		@include media-breakpoint-up(md) {
 			max-width: calc(670 / 1360 * 100%  );
 			// .card-item__wrap p{
-			// 	font-size: rem(20);
+				// 	font-size: rem(20);
 			}
 
-	
-		max-width: calc(288 / 360 * 100% + var(--bs-gutter-x));
+			
+			@include media-breakpoint-up(sm) {
+			max-width: calc(288 / 360 * 100% + var(--bs-gutter-x));
+			}
 		picture{
 		
 			// border-radius: 0 !important;

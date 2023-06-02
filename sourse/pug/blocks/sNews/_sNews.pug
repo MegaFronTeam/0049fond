@@ -24,14 +24,14 @@ mixin sNews(data)
 				mixin wrapper()
 					.swiper-wrapper
 						block
-				+e.col-lg.col
+				+e.col-lg.col-sm
 					+e.slider--js.--lg.swiper
 						+wrapper()
 							+e.slide.swiper-slide: +card-wrap2('1')
 							+e.slide.swiper-slide: +card-wrap2('2')
 							+e.slide.swiper-slide: +card-wrap2('3')
 				// важно в слайдерах должно быть смещение слайда  на один 
-				+e.col-md.col
+				+e.col-md.col.d-none.d-sm-block
 					+e.slider--md-js.--md.swiper
 						+wrapper()
 							+e.slide.swiper-slide: +card-wrap2('2')
