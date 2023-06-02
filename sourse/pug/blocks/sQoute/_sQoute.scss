@@ -1,0 +1,65 @@
+// start .sQoute
+.sQoute {
+	--sPT: #{rem(64)};
+		@include media-breakpoint-up(lg) {
+
+			--sPB: #{rem(64)};
+		}
+		--sPB: 0;
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+
+	&__inner{
+		position: relative;
+		overflow: hidden;
+		background-color: $light;
+		position: relative;
+		img{
+			@include media-breakpoint-up(lg) {
+
+				position: absolute;
+				right: 0;
+				bottom: 0;	
+			}
+			@extend .res-i;
+		}
+		.container{
+		}
+	}
+	p{
+		@include media-breakpoint-up(xl) {
+			max-width: 700px;
+		}
+		@include media-breakpoint-up(lg) {
+		max-width: 500px;
+		}
+
+		font-size: rem(20);
+		line-height: 1.4;
+	}
+	.small{
+		margin-top: 35px;
+		font-size: 12px;
+		opacity: 0.5;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sQoute

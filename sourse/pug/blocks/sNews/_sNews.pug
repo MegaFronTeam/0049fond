@@ -1,0 +1,47 @@
+mixin card-wrap2(num)
+	
+		+b.A.card-item(href="#")
+			picture&attributes(attributes)
+				img(class="object-fit-js" src=`img/news-${num}.jpg` alt="" loading="lazy") 
+			+e.wrap
+				p Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи
+				+e.date 24 мая 2023
+
+
+mixin sNews(data)
+	// start sNews
+	+b.SECTION.sNews.section#sNews&attributes(attributes)
+		+e.container.container-fluid
+			.section-title
+				.row
+					.col
+						h2 Новости
+					.col-auto
+						+e.control-wrap
+							+arrow()
+			.swiper-scrollbar
+			+e.sliders.row
+				mixin wrapper()
+					.swiper-wrapper
+						block
+				+e.col-lg.col
+					+e.slider--js.--lg.swiper
+						+wrapper()
+							+e.slide.swiper-slide: +card-wrap2('1')
+							+e.slide.swiper-slide: +card-wrap2('2')
+							+e.slide.swiper-slide: +card-wrap2('3')
+				// важно в слайдерах должно быть смещение слайда  на один 
+				+e.col-md.col
+					+e.slider--md-js.--md.swiper
+						+wrapper()
+							+e.slide.swiper-slide: +card-wrap2('2')
+							+e.slide.swiper-slide: +card-wrap2('3')
+							+e.slide.swiper-slide: +card-wrap2('1')
+				+e.col-md.col.d-none.d-md-block
+					+e.slider--md2-js.--md.swiper
+						+wrapper()
+							+e.slide.swiper-slide: +card-wrap2('3')
+							+e.slide.swiper-slide: +card-wrap2('1')
+							+e.slide.swiper-slide: +card-wrap2('2')
+				
+	// end sNews

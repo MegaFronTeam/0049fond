@@ -1,0 +1,36 @@
+mixin footer()
+	+b.FOOTER.footer.section
+		+e.head
+			.container
+				.row
+					.col
+						h3 Остались вопросы? 
+						.h5 Задайте их нашим специалистам
+
+						.small.mb-3 Отправляя форму, я соглашаюсь с 
+							a(href="#").text-white Политикой обработки персональных данных
+					.col-md-auto
+						a.btn.btn-primary(href="#") Задать вопрос
+		+e.body
+			.container
+				.row
+					+e.col.col-md-6
+						a(href="/")
+							img(src="img/svg/logo.svg", alt="") 
+						+e.caption Фонд помощи участникам СВО
+						+e.spacer
+						.row
+							.col-xl-auto.smallest © 2023. Все права защищены
+							.col-xl-auto.smallest 
+								a.text-secondary(href="#") Политика конфиденциальности  
+
+					+e.col.col.text-md-end
+						+e.addr г. Москва, Пречистенский переулок, 9А
+						.h4
+							a(href="mailto:info@gosfondveteranov.ru").text-secondary info@gosfondveteranov.ru
+						+e.spacer
+						+soc
+				.text-center
+					+img("img/man.png").man
+					//- +e.spacer
+

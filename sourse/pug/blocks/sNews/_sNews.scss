@@ -1,0 +1,173 @@
+// start .sNews
+.sNews { 
+	&__row{
+		--bs-gutter-x: #{rem(84)};
+		--bs-gutter-y: #{rem(43)};
+		@include media-breakpoint-up(lg) {
+			--bs-gutter-y: #{rem(4)};
+		}
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	
+	&__col-btn {
+		margin-top: rem(48);
+		button {
+			color: $white;
+			border-color: $white;
+			padding: 5px 22px;
+			&:hover {
+				color: $body-color;
+				border-color: $white;
+				background-color: $white;
+			}
+		}
+	}
+	&__control-wrap{
+		position: relative;
+		// right: calc(var(--container-g-x) *2 );
+		// bottom: rem(60);
+		width:  calc(var(--swiperArrowSize)  * 1.5);
+		height: 100%;
+		--swiperArrowPosition: 0;
+		--swiperColorDef: #000;
+		// --swiperBorderColorDef: n;
+		.swiper-button-hand {
+			background: none;
+			border: none;
+			width: 35px;
+			height: 35px;
+			.icon{
+				fill:none;
+				stroke: #000;
+			}
+		}
+	}
+	&__slider {
+		// border-radius: 12px;
+	}
+	&__sliders{
+		flex-wrap: nowrap;
+		position: relative;
+		@include media-breakpoint-down(sm) {
+			--bs-gutter-x: 16px;
+		}
+	}
+	&__col-lg{
+		@include media-breakpoint-up(lg) {
+			// max-width: calc(670 / 1360 * 100%  );
+			.card-item__wrap p{
+				font-size: rem(20);
+			}
+		}
+			
+		@include media-breakpoint-up(md) {
+			max-width: calc(670 / 1360 * 100%  );
+			// .card-item__wrap p{
+			// 	font-size: rem(20);
+			}
+
+	
+		max-width: calc(288 / 360 * 100% + var(--bs-gutter-x));
+		picture{
+		
+			// border-radius: 0 !important;
+			@include media-breakpoint-up(md) {
+				--ratio: 670/457;
+			}
+			@include block(288, 225);
+		}
+}
+&__col-md{
+		max-width: calc(194 / 360 * 100% + var(--bs-gutter-x));
+		@include media-breakpoint-up(md) {
+			
+			max-width: calc(345 / 1360 * 100%);
+		}
+	}
+	&__slide{
+		height: auto;
+		picture{
+		
+			@include block(325, 324);
+		}
+	}
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sNews
+
+
+
+.card-item {
+	color: #000000 !important; 
+	display: block;
+	picture {
+		background-color: $dark;
+		margin-bottom: rem(20);
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover
+		}
+	}
+	.img-sm {
+		@include block(514, 400);
+		@include media-breakpoint-down(lg) {
+			--ratio: 256/328;
+		}
+	}
+	.img-lg {
+		@include block(514, 634);
+		@include media-breakpoint-down(lg) {
+			--ratio: 256/328;
+		}
+	}
+
+&__wrap {
+	// display: flex;
+	// justify-content: space-between;
+	margin: 0 10px;
+	// max-width: 533px;
+	p {
+		font-size: rem(16);
+		// font-weight: 700;
+		margin-bottom: 20px;
+		// max-width: rem(361);
+	}
+	p, span {
+		
+	}
+	span {
+		font-size: rem(12);
+	}
+}
+&__date {
+	opacity: 0.5;
+	font-weight: 300;
+	font-style: italic;
+	// text-align: right;
+	// // display: flex;
+	// // flex-direction: column;
+	// opacity: 0.6;
+	// span{
+	// 	display: block;
+	// 	white-space: nowrap;
+	// }
+}
+
+}

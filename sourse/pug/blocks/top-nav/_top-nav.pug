@@ -1,0 +1,49 @@
+mixin menu-toggle()
+	+b.toggle-menu-mobile--js.d-lg-none
+		span
+mixin mob-mnu()
+	-
+		//- let path = require('path');
+		//- let fs = require('fs');
+		//- var requestURL = 'top-nav.json';
+		//- var request = new XMLHttpRequest();
+		//- request.open('GET', requestURL);
+		//- request.responseType = 'json';
+		//- let dataJson = JSON.parse(json);
+	//- h1= dataJson['lala'] 
+	+b.menu-mobile--js
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+			+mnu()
+	//  мобильное меню
+mixin top-nav() 
+	mixin contact()
+		.row.d-lg-flex.d-block
+			.col-xl
+				a.link-dark(href="tel:88006588899").strong 8 800 658 88 99
+			.col-xl-auto
+				a(href="#").strong.link-secondary Написать нам
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			.row
+				.col-lg-3.col
+					a(href="/")
+						img(src="img/svg/logo.svg", alt="") 
+				.col-lg.order-lg-0.order-last
+					.menu-mobile.menu-mobile--js
+						.menu-mobile__inner
+							+menu-toggle()
+							.d-md-none.ps-3
+								a(href="/")
+									img(src="img/svg/logo.svg", alt="") 
+							+mnu()
+							.d-md-none.ps-3
+								+contact()
+					
+				.col-lg-3.col-auto.text-end.d-none.d-md-block
+					+contact()
+				.col-auto.d-lg-none
+					+menu-toggle()
+	// end top-nav
