@@ -22,6 +22,10 @@
 	&__slide{
 		height: auto;
 	}
+	img{
+		@extend .res-i;
+		margin-bottom: 30px;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

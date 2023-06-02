@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>02-news-page.html</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+							wrap.remove();
+						}
+					);
+			}
+		</script>
+	</head>
+	<body class="inner-page">
+		<div class="main-wrapper">
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col"><a href="/"><img src="img/svg/logo.svg" alt=""/></a></div>
+						<div class="col-lg order-lg-0 order-last">
+							<div class="menu-mobile menu-mobile--js">
+								<div class="menu-mobile__inner">
+									<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+									</div>
+									<div class="d-md-none ps-3"><a href="/"><img src="img/svg/logo.svg" alt=""/></a></div>
+									<nav>
+										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О фонде</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Направления</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Руководство</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+										</ul>
+									</nav>
+									<div class="d-md-none ps-3">
+										<div class="row d-lg-flex d-block">
+											<div class="col-xl"><a class="link-dark strong" href="tel:88006588899">8 800 658 88 99</a></div>
+											<div class="col-xl-auto"><a class="strong link-secondary" href="#">Написать нам</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-auto text-end d-none d-md-block">
+							<div class="row d-lg-flex d-block">
+								<div class="col-xl"><a class="link-dark strong" href="tel:88006588899">8 800 658 88 99</a></div>
+								<div class="col-xl-auto"><a class="strong link-secondary" href="#">Написать нам</a></div>
+							</div>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end top-nav-->
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock section" id="headerBlock">
+					<div class="container"><a class="back text-body" href="#">
+							<svg class="icon icon-arrow-left ">
+								<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+							</svg></a>
+						<h1>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</h1>
+						<p>24 мая 2023</p>
+					</div>
+				</div>
+				<!-- end headerBlock-->
+				<!-- start sContent-->
+				<div class="sContent section" id="sContent">
+					<div class="container">
+						<div class="sContent__row row">
+							<div class="col-lg-6"><img src="img/news-1.jpg" alt="" loading="lazy"/>
+							</div>
+							<div class="col-lg-6">
+								<p>Одной из важнейших задач на сегодняшний день является поддержка участников специальной военной операции на всех уровнях, включая правовую сферу. 23 мая Федеральная нотариальная палата и Государственный фонд «Защитники Отечества» заключили соглашение о сотрудничестве с целью развития методов и масштабов оказания помощи участникам СВО и их семьям. Документ предусматривает ряд таких направлений деятельности, как правовое информирование ветеранов по нотариальным вопросам, создание дополнительных условий для компетентной, квалифицированной и бесплатной юридической помощи участникам СВО и членам их семей и т.д.</p>
+								<p>Президент Федеральной нотариальной палаты Константин Корсик напомнил, что для нотариусов всей страны помощь вынужденным переселенцам и участникам специальной военной операции является особо важным направлением. «Сразу после начала СВО нотариат ввел меры поддержки для беженцев, а с началом мобилизации была запущена система льгот для тех, кто отправлялся на фронт. В феврале текущего года введены дополнительные меры поддержки для участников специальной военной операции и их родных», — сказал глава ФНП. Кроме того, организовывалась работа «дежурных нотариальных контор», в ряде регионов было организовано выездное обслуживание в пунктах сбора, учебных центрах и так далее.</p>
+								<p>К настоящему моменту нотариат предоставил для беженцев и участников СВО льготы при совершении необходимых нотариальных действий на общую сумму более 320 млн рублей. Как и все остальные социально значимые проекты, инициатива с предоставлением льгот реализуется исключительно за счет средств нотариата, без привлечения бюджетных денег.</p>
+								<p>Основной целью фонда «Защитники Отечества» является персональное социальное сопровождение ветеранов СВО и содействие в получении всех полагающихся мер поддержки, включающей медицинскую и социальную реабилитацию, лекарственное обеспечение, психологическую помощь, технические средства реабилитации и санаторно-курортное лечение. Также фонд будет заниматься содействием в переобучении и трудоустройстве ветеранов.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end sContent-->
+				<!-- start sNews-->
+				<section class="sNews section" id="sNews">
+					<div class="sNews__container container-fluid">
+						<div class="section-title">
+							<div class="row">
+								<div class="col">
+									<h2>Еще новости</h2>
+								</div>
+								<div class="col-auto">
+									<div class="sNews__control-wrap">
+										<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+											<svg class="icon icon-arrow-left ">
+												<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+											</svg>
+										</div>
+										<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+											<svg class="icon icon-arrow-right ">
+												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-scrollbar"></div>
+						<div class="sNews__sliders row">
+							<div class="sNews__col-lg col-sm">
+								<div class="sNews__slider sNews__slider--js sNews__slider--lg swiper">
+									<div class="swiper-wrapper">
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-2.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-3.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- важно в слайдерах должно быть смещение слайда  на один -->
+							<div class="sNews__col-md col d-none d-sm-block">
+								<div class="sNews__slider sNews__slider--md-js sNews__slider--md swiper">
+									<div class="swiper-wrapper">
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-2.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-3.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sNews__col-md col d-none d-md-block">
+								<div class="sNews__slider sNews__slider--md2-js sNews__slider--md swiper">
+									<div class="swiper-wrapper">
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-3.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="sNews__slide swiper-slide">
+											<a class="card-item" href="#">
+												<picture><img class="object-fit-js" src="img/news-2.jpg" alt="" loading="lazy"/></picture>
+												<div class="card-item__wrap">
+													<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+													<div class="card-item__date">24 мая 2023
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sNews-->
+			</main>
+			<footer class="footer section">
+				<div class="footer__head">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h3>Остались вопросы? </h3>
+								<div class="h5">Задайте их нашим специалистам</div>
+								<div class="small mb-3">Отправляя форму, я соглашаюсь с <a class="text-white" href="#">Политикой обработки персональных данных</a></div>
+							</div>
+							<div class="col-md-auto"><a class="btn btn-primary" href="#">Задать вопрос</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__body">
+					<div class="container">
+						<div class="row">
+							<div class="footer__col col-md-6"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
+								<div class="footer__caption">Фонд помощи участникам СВО
+								</div>
+								<div class="footer__spacer">
+								</div>
+								<div class="row">
+									<div class="col-xl-auto smallest">© 2023. Все права защищены</div>
+									<div class="col-xl-auto smallest"> <a class="text-secondary" href="#">Политика конфиденциальности  </a></div>
+								</div>
+							</div>
+							<div class="footer__col col text-md-end">
+								<div class="footer__addr">г. Москва, Пречистенский переулок, 9А
+								</div>
+								<div class="h4"><a class="text-secondary" href="mailto:info@gosfondveteranov.ru">info@gosfondveteranov.ru</a></div>
+								<div class="footer__spacer">
+								</div>
+								<div class="soc">
+									<a class="soc__item" href="#" target="_blank">
+										<svg class="icon icon-telegram ">
+											<use xlink:href="img/svg/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+									<a class="soc__item" href="#" target="_blank">
+										<svg class="icon icon-vk ">
+											<use xlink:href="img/svg/sprite.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="soc__item" href="#" target="_blank">
+										<svg class="icon icon-ok ">
+											<use xlink:href="img/svg/sprite.svg#ok"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="text-center"><img class="man" src="img/man.png" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

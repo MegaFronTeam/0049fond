@@ -8,14 +8,14 @@ mixin card-wrap2(num)
 				+e.date 24 мая 2023
 
 
-mixin sNews(data)
+mixin sNews(t="Новости")
 	// start sNews
 	+b.SECTION.sNews.section#sNews&attributes(attributes)
 		+e.container.container-fluid
 			.section-title
 				.row
 					.col
-						h2 Новости
+						h2= t
 					.col-auto
 						+e.control-wrap
 							+arrow()

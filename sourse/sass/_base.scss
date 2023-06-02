@@ -557,3 +557,26 @@ iframe {
 .btn{
 	font-weight: 600;
 }
+
+.inner-page{
+	h1{
+		@include rfs(40px);
+	}
+	.headerBlock{
+		p{
+			font-weight: 300;
+			font-style: italic;
+			font-size: 14px;
+		}
+		--sPB: #{rem(30px)};
+	}
+}
+
+.back{
+	display: inline-block;
+	margin-bottom: 20px;
+	.icon{
+		font-size: 16px;
+		stroke: currentColor;
+	}
+}

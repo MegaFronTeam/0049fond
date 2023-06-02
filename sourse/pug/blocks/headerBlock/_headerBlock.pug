@@ -9,3 +9,12 @@ mixin headerBlock()
 				.col-md-auto
 					+e.btn(href="#").btn.btn-primary Спросить о помощи
 	// end headerBlock
+mixin headerBlock2()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		.container
+			a(href="#").back.text-body
+				+icon("arrow-left")
+			h1 Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи
+			p 24 мая 2023
+	// end headerBlock
