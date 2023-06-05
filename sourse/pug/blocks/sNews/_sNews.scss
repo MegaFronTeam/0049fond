@@ -49,6 +49,10 @@
 	}
 	&__slider {
 		// border-radius: 12px;
+		margin-right: -10px;
+		@include media-breakpoint-down(lg){
+			overflow: visible;
+		}
 	}
 	&__sliders{
 		flex-wrap: nowrap;
@@ -56,34 +60,7 @@
 		@include media-breakpoint-down(sm) {
 			--bs-gutter-x: 16px;
 		}
-	}
-	&__col-lg{
-		@include media-breakpoint-up(lg) {
-			// max-width: calc(670 / 1360 * 100%  );
-			.card-item__wrap p{
-				font-size: rem(20);
-			}
-		}
-			
-		@include media-breakpoint-up(md) {
-			max-width: calc(670 / 1360 * 100%  );
-			// .card-item__wrap p{
-				// 	font-size: rem(20);
-			}
-
-			
-			@include media-breakpoint-up(sm) {
-			max-width: calc(288 / 360 * 100% + var(--bs-gutter-x));
-			}
-		picture{
-		
-			// border-radius: 0 !important;
-			@include media-breakpoint-up(md) {
-				--ratio: 670/457;
-			}
-			@include block(288, 225);
-		}
-}
+	} 
 &__col-md{
 		max-width: calc(194 / 360 * 100% + var(--bs-gutter-x));
 		@include media-breakpoint-up(md) {
@@ -93,10 +70,36 @@
 	}
 	&__slide{
 		height: auto;
+			@include media-breakpoint-up(lg) {
+
+				width: calc(25% - 5px);
+			}
+			width: 250px;
+		margin-right: 10px;
 		picture{
 		
 			@include block(325, 324);
 		}
+		&:nth-child(1){
+			.card-item__wrap p{
+				font-size: rem(20);
+			}
+			picture{
+		
+			// border-radius: 0 !important;
+			// @include media-breakpoint-up(md) {
+			// 	--ratio: ;
+			// }
+			@include block(457 , 670);
+		}
+			@include media-breakpoint-up(lg){
+
+				width: calc(50% - 20px);
+			}
+			width: 450px;
+			max-width: calc(100% - 10px);
+		}
+		
 	}
 
 
@@ -115,7 +118,7 @@
 	color: #000000 !important; 
 	display: block;
 	picture {
-		background-color: $dark;
+		// background-color: $dark;
 		margin-bottom: rem(20);
 		overflow: hidden;
 		img {

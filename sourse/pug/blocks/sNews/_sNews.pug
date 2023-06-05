@@ -11,7 +11,7 @@ mixin card-wrap2(num)
 mixin sNews(t="Новости")
 	// start sNews
 	+b.SECTION.sNews.section#sNews&attributes(attributes)
-		+e.container.container-fluid
+		.container
 			.section-title
 				.row
 					.col
@@ -19,29 +19,10 @@ mixin sNews(t="Новости")
 					.col-auto
 						+e.control-wrap
 							+arrow()
-			.swiper-scrollbar
-			+e.sliders.row
-				mixin wrapper()
+				+e.slider--js.swiper
 					.swiper-wrapper
-						block
-				+e.col-lg.col-sm
-					+e.slider--js.--lg.swiper
-						+wrapper()
-							+e.slide.swiper-slide: +card-wrap2('1')
-							+e.slide.swiper-slide: +card-wrap2('2')
-							+e.slide.swiper-slide: +card-wrap2('3')
-				// важно в слайдерах должно быть смещение слайда  на один 
-				+e.col-md.col.d-none.d-sm-block
-					+e.slider--md-js.--md.swiper
-						+wrapper()
-							+e.slide.swiper-slide: +card-wrap2('2')
-							+e.slide.swiper-slide: +card-wrap2('3')
-							+e.slide.swiper-slide: +card-wrap2('1')
-				+e.col-md.col.d-none.d-md-block
-					+e.slider--md2-js.--md.swiper
-						+wrapper()
-							+e.slide.swiper-slide: +card-wrap2('3')
-							+e.slide.swiper-slide: +card-wrap2('1')
-							+e.slide.swiper-slide: +card-wrap2('2')
+						+e.slide.swiper-slide: +card-wrap2('1')
+						+e.slide.swiper-slide: +card-wrap2('2')
+						+e.slide.swiper-slide: +card-wrap2('3')
 				
 	// end sNews

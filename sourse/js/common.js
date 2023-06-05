@@ -441,37 +441,37 @@ function eventHandler() {
     
 
 	let opt = {
-		// slidesPerView: 1,
-		loop: true,
-		speed: 1400,
-		spaceBetween: 1,
-		parallax: true,
-		scrollbar: {
-			el: '.swiper-scrollbar',
-			draggable: true,
-		},
-		lazy: {
-			loadPrevNext: true,
-			loadPrevNextAmount: 3
-		},
+		slidesPerView: 'auto',
+		loop: false,
+		// speed: 1400,
+		spaceBetween: 0,
+		// parallax: true,
+		// scrollbar: {
+		// 	el: '.swiper-scrollbar',
+		// 	draggable: true,
+		// },
+		// lazy: {
+		// 	loadPrevNext: true,
+		// 	loadPrevNextAmount: 3
+		// },
 
 	}
 
 	const NewsSwiper = new Swiper('.sNews__slider--js', {
 		...opt,
 		navigation: {
-			nextEl: ' .swiper-button-next',
-			prevEl: ' .swiper-button-prev',
+			nextEl: '.sNews .swiper-button-next',
+			prevEl: '.sNews .swiper-button-prev',
 		}
 	});
 
-	const NewsSwiperMd = new Swiper('.sNews__slider--md-js', opt);
+	// const NewsSwiperMd = new Swiper('.sNews__slider--md-js', opt);
 
-	const NewsSwiperMd2 = new Swiper('.sNews__slider--md2-js', opt);
+	// const NewsSwiperMd2 = new Swiper('.sNews__slider--md2-js', opt);
 
-	NewsSwiper.controller.control = [NewsSwiperMd, NewsSwiperMd2];
-	NewsSwiperMd.controller.control = NewsSwiper;
-	NewsSwiperMd2.controller.control = NewsSwiper;
+	// NewsSwiper.controller.control = [NewsSwiperMd, NewsSwiperMd2];
+	// NewsSwiperMd.controller.control = NewsSwiper;
+	// NewsSwiperMd2.controller.control = NewsSwiper;
 
 
 };
