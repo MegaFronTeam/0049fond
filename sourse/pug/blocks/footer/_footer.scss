@@ -64,9 +64,11 @@
 			padding-bottom: 20px;
 		}
 		position: relative;
+		z-index: 2;
 		.man{
 			@extend .res-i;
 			@include media-breakpoint-up(lg) {
+				z-index: -1;
 
 				@include a-cent(x);
 				bottom: 0;
