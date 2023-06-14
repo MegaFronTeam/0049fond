@@ -8,32 +8,40 @@
 		--sPB: 0;
 	// --sTPB: #{rem()};
 	&__row{
-		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
-
+		
 	}
 	.section-title{
 		
 	}
 	&__col{
-
+		
 	}
 	&__item{
-
+		
 	}
-
+	
 	&__inner{
 		position: relative;
 		overflow: hidden;
 		background-color: $light;
 		position: relative;
+		@include media-breakpoint-up(lg){
+			--sPT: 0;
+		}
+		--sPB: 0;
+		.row{
+			align-items: center;
+			--bs-gutter-y: #{rem(30)};
+		}
 		img{
-			@include media-breakpoint-up(lg) {
+			max-height: 100%;
+			// @include media-breakpoint-up(lg) {
 
-				position: absolute;
-				right: 0;
-				bottom: 0;	
-			}
+			// 	position: absolute;
+			// 	right: 0;
+			// 	bottom: 0;	
+			// }
 			@extend .res-i;
 		}
 		.container{
