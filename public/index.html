@@ -42,40 +42,40 @@
 			<div class="top-nav block-with-lazy">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col"><a href="/"><img src="img/svg/logo.svg" alt=""/></a></div>
-						<div class="col-lg order-lg-0 order-last">
-							<div class="menu-mobile menu-mobile--js">
-								<div class="menu-mobile__inner">
-									<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-									</div>
-									<div class="d-md-none ps-3"><a href="/"><img src="img/svg/logo.svg" alt=""/></a></div>
-									<nav>
-										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О фонде</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Направления</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Руководство</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
-										</ul>
-									</nav>
-									<div class="d-md-none ps-3">
-										<div class="row d-lg-flex d-block">
-											<div class="col-xl"><a class="link-dark strong" href="tel:88006588899">8 800 658 88 99</a></div>
-											<div class="col-xl-auto"><a class="strong link-secondary" href="#">Написать нам</a></div>
-										</div>
-									</div>
-								</div>
+						<div class="col-auto">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js btn btn-light"><span></span>
 							</div>
 						</div>
-						<div class="col-lg-3 col-auto text-end d-none d-md-block">
-							<div class="row d-lg-flex d-block">
-								<div class="col-xl"><a class="link-dark strong" href="tel:88006588899">8 800 658 88 99</a></div>
-								<div class="col-xl-auto"><a class="strong link-secondary" href="#">Написать нам</a></div>
+						<div class="col-lg-auto col"><a href="/"><img class="res-i" src="img/svg/logo.svg" alt=""/></a></div>
+						<div class="col-lg-auto order-lg-0 order-last d-none d-lg-block">
+							<nav>
+								<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О фонде</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Направления</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Медиа</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Руководство</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Филиалы</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-lg order-lg-0 order-first">
+							<div class="search-block">
+								<form>
+									<input type="text" placeholder="Поиск по сайту"/>
+									<button> 
+										<svg class="icon icon-search ">
+											<use xlink:href="img/svg/sprite.svg#search"></use>
+										</svg>
+									</button>
+								</form>
 							</div>
 						</div>
-						<div class="col-auto d-lg-none">
-							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-							</div>
+						<div class="col-auto">
+							<button class="btn btn-light" type="button">
+								<svg class="icon icon-glasses ">
+									<use xlink:href="img/svg/sprite.svg#glasses"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -83,16 +83,22 @@
 			<!-- end top-nav-->
 			<main>
 				<!-- start headerBlock-->
-				<div class="headerBlock section" id="headerBlock">
+				<div class="headerBlock headerBlock--update section pt-0" id="headerBlock">
 					<div class="container">
-						<h1>Фонд Защитники Отечества</h1>
-						<div class="row">
-							<div class="col">
-								<p>Персональная помощь семьям погибших бойцов и&nbsp;ветеранам специальной военной операции</p>
-							</div>
-							<div class="col-md-auto">
-								<a class="headerBlock__btn btn btn-primary" href="#">Спросить о помощи
-								</a>
+						<div class="headerBlock__inner">
+							<div class="row">
+								<div class="headerBlock__col col-lg-auto">
+									<h1>Государственный фонд «Защитники Отечества»</h1>
+									<p>Персональная помощь семьям погибших бойцов и ветеранам специальной военной операции</p>
+									<div class="headerBlock__btns">
+										<a class="headerBlock__btn btn btn-primary" href="#">Меры поддержки
+										</a>
+										<a class="headerBlock__btn btn btn-outline-primary" href="#">Обратиться
+										</a>
+									</div>
+								</div>
+								<div class="headerBlock__img-wrap col-lg text-end"><img class="res-i" src="img/head-img.png" alt="" loading="lazy"/>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -101,20 +107,24 @@
 				<!-- start sAbout-->
 				<section class="sAbout section" id="sAbout">
 					<div class="container">
-						<div class="section-title">
-							<h3>Основной целью фонда является персональное социальное сопровождение ветеранов CBO и&nbsp;семей погибших.</h3>
+						<div class="section-title"> 
 						</div>
 						<div class="sAbout__row row">
-							<div class="sAbout__col col-xl-6 col-lg-5">
-								<p>Фонд оказывает содействие в&nbsp;получении всех полагающихся мер поддержки, включающих медицинскую и&nbsp;социальную реабилитацию, лекарственное обеспечение, психологическую помощь, технические средства реабилитации и&nbsp;санаторно-курортное лечение, а&nbsp;также переобучении и&nbsp;трудоустройстве ветеранов.</p>
+							<div class="sAbout__col col-lg">
+								<div class="section-title">
+									<h2>Цели и задачи фонда</h2>
+								</div>
+								<p>Фонд оказывает содействие в&nbsp;получении всех полагающихся мер поддержки, включающих медицинскую и&nbsp;социальную реабилитацию, лекарственное обеспечение, психологическую помощь, технические средства реабилитации и&nbsp;санаторно-курортное лечение, а&nbsp;также переобучении и&nbsp;трудоустройстве ветеранов.</p><a class="btn btn-outline-primary" href="#">Узнать больше о фонде</a>
+							</div>
+							<div class="sAbout__col col-lg-auto">
 								<div class="sAbout__block"><img src="img/vector.svg" alt="" loading="lazy"/>С ветеранами СВО и семьями погибших бойцов в регионах работают социальные координаторы, прошедшие специальное обучение.
 								</div>
 							</div>
-							<div class="col">
+							<div class="col-12">
 								<div class="sAbout__caption">
 									<p>&laquo;Предлагаю создать специальный государственный фонд. Его задачей станет адресная, персональная помощь семьям погибших бойцов и&nbsp;ветеранам специальной военной операции. Он&nbsp;будет координировать предоставление социальной, медицинской, психологической поддержки, решать вопросы санаторно-курортного лечения и&nbsp;реабилитации, помогать в&nbsp;образовании, спорте, трудоустройстве, предпринимательстве, в&nbsp;повышении квалификации, в&nbsp;получении новой профессии&raquo;.</p>
 									<div class="sAbout__footer-text"> Президент Российской Федерации Владимир Путин <br/>в&nbsp;Послании Федеральному Собранию <br/>21&nbsp;февраля 2023 года
-									</div><img src="img/rectangle_2.png" alt="" loading="lazy"/>
+									</div><img src="img/rectangle_2.png" alt=""/>
 								</div>
 							</div>
 						</div>
@@ -126,141 +136,125 @@
 					<div class="container">
 						<div class="section-title">
 							<h2>Направления деятельности фонда</h2>
-							<h3>Фонд обеспечивает комплексное сопровождение ветеранов СВО и&nbsp;членов семей погибших (умерших) ветеранов в&nbsp;целях предоставления мер поддержки, оказанию социальных и&nbsp;иных услуг, помощи по&nbsp;принципу &laquo;одного окна&raquo;</h3>
+							<h5>Фонд обеспечивает комплексное сопровождение ветеранов СВО и членов семей погибших (умерших) ветеранов в целях предоставления мер поддержки, оказанию социальных и иных услуг, помощи по принципу «одного окна»</h5>
 						</div>
 						<div class="sDirections__row row">
-							<div class="col-lg-6">
-								<div class="sDirections__item">
-									<div class="sDirections__title">Медицинская реабилитация
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-1.svg" alt=""/>
+									<div class="sDirections__title">Медицинская  <br> реабилитация
 									</div>
-									<p>фонд содействует в&nbsp;получении нуждающимися ветеранами СВО услуг по&nbsp;медицинской реабилитации, в&nbsp;том числе с&nbsp;привлечением региональной сети социально-реабилитационных центров</p>
+									<p>фонд содействует в получении нуждающимися ветеранами СВО услуг по медицинской реабилитации, в том числе с привлечением региональной сети социально-реабилитационных центров</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-2.svg" alt=""/>
 									<div class="sDirections__title">Психолого-психотерапевтическая помощь
 									</div>
-									<p>фонд участвует в&nbsp;оказании нуждающимся ветеранам СВО и&nbsp;членам семей погибших (умерших) ветеранов психолого-психотерапевтической помощи</p>
+									<p>фонд участвует в оказании нуждающимся ветеранам СВО и членам семей погибших (умерших) ветеранов психолого-психотерапевтической помощи</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
-									<div class="sDirections__title">Госпитализация
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-3.svg" alt=""/>
+									<div class="sDirections__title">Плановая и срочная госпитализация
 									</div>
-									<p>фонд сотрудничает с&nbsp;госпиталями и&nbsp;иными медицинскими организациями в&nbsp;интересах ветеранов СВО</p>
+									<p>фонд сотрудничает с госпиталями и иными медицинскими организациями в интересах ветеранов СВО</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-4.svg" alt=""/>
 									<div class="sDirections__title">Паллиативная медицинская помощь
 									</div>
-									<p>фонд содействует в&nbsp;получении нуждающимися ветеранами СВО паллиативной медицинской помощи</p>
+									<p>фонд содействует в получении нуждающимися ветеранами СВО паллиативной медицинской помощи</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-5.svg" alt=""/>
 									<div class="sDirections__title">Санаторно-курортное лечение
 									</div>
-									<p>фонд оказывает содействие в&nbsp;обеспечении санаторно-курортного лечения нуждающихся в&nbsp;нем ветеранов СВО</p>
+									<p>фонд оказывает содействие в обеспечении санаторно-курортного лечения нуждающихся в нем ветеранов СВО</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
-									<div class="sDirections__title">Обеспечение техническими средствами реабилитации
-									</div>
-									<p>фонд формирует перечень и&nbsp;закупает для нуждающихся ветеранов СВО технические средства реабилитации, не&nbsp;входящие в&nbsp;федеральный перечень реабилитационных мероприятий, технических средств реабилитации и&nbsp;услуг, предоставляемых инвалиду, включая высокофункциональные протезы и&nbsp;протезно-ортопедические изделия</p>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-6.svg" alt=""/>
 									<div class="sDirections__title">Организация системы долговременного ухода
 									</div>
-									<p>фонд содействует в&nbsp;предоставлении надомного (долговременного) ухода нуждающимся в&nbsp;постоянной посторонней помощи ветеранам СВО</p>
+									<p>фонд содействует в предоставлении надомного (долговременного) ухода нуждающимся в постоянной посторонней помощи ветеранам СВО</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-7.svg" alt=""/>
 									<div class="sDirections__title">Социальная адаптация и&nbsp;ресоциализация
 									</div>
 									<p>фонд участвует в&nbsp;разработке и&nbsp;реализации программ социальной адаптации и&nbsp;ресоциализации ветеранов СВО</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
-									<div class="sDirections__title">Юридическая помощь
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-8.svg" alt=""/>
+									<div class="sDirections__title">Юридическая <br> помощь
 									</div>
-									<p>фонд оказывает бесплатную юридическую помощь нуждающимся ветеранам СВО, членам семей погибших (умерших) ветеранов по&nbsp;вопросам оформления и&nbsp;предоставления мер социальной поддержки</p>
+									<p> фонд оказывает бесплатную юридическую помощь нуждающимся ветеранам СВО, членам семей погибших (умерших) ветеранов по вопросам оформления и предоставления мер социальной поддержки</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
-									<div class="sDirections__title">Социальная поддержка
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-9.svg" alt=""/>
+									<div class="sDirections__title">Социальная <br> поддержка
 									</div>
-									<p>фонд содействует в&nbsp;получении ветеранами СВО, членами семей погибших (умерших) ветеранов установленных законодательством Российской Федерации мер социальной поддержки</p>
+									<p>фонд содействует в получении ветеранами СВО, членами семей погибших (умерших) ветеранов установленных законодательством Российской Федерации мер социальной поддержки</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-10.svg" alt=""/>
 									<div class="sDirections__title">Восстановление и оформление документов
 									</div>
 									<p>фонд содействует в&nbsp;оформлении (восстановлении) документов и&nbsp;получении участниками СВО статуса ветерана боевых действий в&nbsp;соответствии с&nbsp;федеральным законодательством</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-11.svg" alt=""/>
 									<div class="sDirections__title">Патриотическое воспитание население
 									</div>
 									<p>фонд организует просветительскую деятельность в&nbsp;сфере патриотического воспитания, в&nbsp;том числе молодежи направленную на&nbsp;прославление подвигов участников специальной военной операции и&nbsp;иных лиц</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-12.svg" alt=""/>
 									<div class="sDirections__title">Увековечивание памяти ветеранов СВО
 									</div>
-									<p>фонд организует мероприятия по&nbsp;увековечению памяти ветеранов СВО и&nbsp;их&nbsp;подвигов</p>
+									<p>фонд организует мероприятия по увековечению памяти ветеранов СВО и их подвигов</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
-									<div class="sDirections__title">Спорт, паралимпийское движение, культурно-досуговая деятельность
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-13.svg" alt=""/>
+									<div class="sDirections__title">Спорт, паралимпийское  движение, культурно-досуговая деятельность
 									</div>
-									<p>фонд организует спортивные мероприятия с&nbsp;участием ветеранов, а&nbsp;также фонд содействует вовлечению ветеранов с&nbsp;инвалидностью в&nbsp;паралимпийское движение</p>
+									<p>фонд организует спортивные мероприятия с участием ветеранов, а также фонд содействует вовлечению ветеранов с инвалидностью в паралимпийское движение</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-14.svg" alt=""/>
 									<div class="sDirections__title">Историко-культурное просвещение
 									</div>
-									<p>фонд оказывает поддержку в&nbsp;посещении ветеранами учреждений культуры, приобщению их&nbsp;к&nbsp;историко-культурному наследию страны</p>
+									<p> фонд оказывает поддержку в посещении ветеранами учреждений культуры, приобщению их к историко-культурному наследию страны</p>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="sDirections__item">
-									<div class="sDirections__title">Интеграция ветеранов СВО в&nbsp;систему Патриотическое воспитание граждан России
+							<div class="col-xl-4 col-lg-6">
+								<div class="sDirections__item"><img src="img/direction-item-15.svg" alt=""/>
+									<div class="sDirections__title">Интеграция ветеранов СВО  в систему Патриотическое воспитание граждан России
 									</div>
-									<p>фонд разрабатывает и&nbsp;реализует программы интеграции ветеранов СВО в&nbsp;систему патриотического воспитания граждан России и&nbsp;наставничество</p>
+									<p>фонд разрабатывает и реализует программы интеграции ветеранов СВО в систему патриотического воспитания граждан России и наставничество</p>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="sDirections__item"><img src="img/direction-item-16.svg" alt=""/>
+									<div class="sDirections__title">Обеспечение техническими средствами реабилитации
+									</div>
+									<p>фонд формирует перечень и закупает для нуждающихся ветеранов СВО технические средства реабилитации, не входящие в федеральный перечень реабилитационных мероприятий, технических средств реабилитации и услуг, предоставляемых инвалиду, включая высокофункциональные протезы и протезно-ортопедические изделия</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 				<!-- end sDirections-->
-				<!-- start sQoute-->
-				<div class="sQoute" id="sQoute">
-					<div class="sQoute__inner section">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<p>&laquo;Чтобы обеспечить защитников Родины всем необходимым, окружить их&nbsp;заботой и&nbsp;вниманием и&nbsp;помочь вернуться к&nbsp;привычной жизни, социальным координаторам необходимы такие личные качества, как вовлеченность и&nbsp;неравнодушие. Справедливость, забота и&nbsp;уважение к&nbsp;героям&raquo;.</p>
-									<div class="small">Председатель фонда <br/>Анна Цивилева</div>
-								</div>
-								<div class="col-lg text-end"><img src="https://gosfondveteranov.ruvents.dev/upload/img/civileva-quote.jpg" alt="" loading="lazy"/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end sQoute-->
 				<!-- start sNews-->
 				<section class="sNews section" id="sNews">
 					<div class="container">
@@ -269,133 +263,117 @@
 								<div class="col">
 									<h2>Новости</h2>
 								</div>
-								<div class="col-auto">
-									<div class="sNews__control-wrap">
-										<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
-											<svg class="icon icon-arrow-left ">
-												<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
-											</svg>
-										</div>
-										<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
-											<svg class="icon icon-arrow-right ">
-												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
-											</svg>
-										</div>
-									</div>
-								</div>
+								<div class="col-auto"><a class="btn btn-primary" href="#">Все новости </a></div>
 							</div>
-							<div class="sNews__slider sNews__slider--js swiper">
-								<div class="swiper-wrapper">
-									<div class="sNews__slide swiper-slide">
-										<a class="card-item" href="#">
-											<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
-											<div class="card-item__wrap">
-												<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
-												<div class="card-item__date">24 мая 2023
-												</div>
-											</div>
-										</a>
+						</div>
+						<div class="row">
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
 									</div>
-									<div class="sNews__slide swiper-slide">
-										<a class="card-item" href="#">
-											<picture><img class="object-fit-js" src="img/news-2.jpg" alt="" loading="lazy"/></picture>
-											<div class="card-item__wrap">
-												<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
-												<div class="card-item__date">24 мая 2023
-												</div>
-											</div>
-										</a>
+								</a>
+							</div>
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-2.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
 									</div>
-									<div class="sNews__slide swiper-slide">
-										<a class="card-item" href="#">
-											<picture><img class="object-fit-js" src="img/news-3.jpg" alt="" loading="lazy"/></picture>
-											<div class="card-item__wrap">
-												<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
-												<div class="card-item__date">24 мая 2023
-												</div>
-											</div>
-										</a>
+								</a>
+							</div>
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-3.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
 									</div>
-								</div>
+								</a>
+							</div>
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
 				</section>
 				<!-- end sNews-->
-				<!-- start sTeam-->
-				<section class="sTeam section" id="sTeam">
-					<div class="container">
-						<div class="sTeam__row row">
-							<div class="col-lg-6">
-								<h2>Руководство фонда</h2>
-							</div>
-							<div class="col-lg-6">
-								<div class="sTeam__img-wrap">
-									<div class="sTeam__caption">
-										<div class="sTeam__name">Анна <br> Цивилева
-										</div>
-										<div class="sTeam__prof">Председатель фонда
-										</div>
-									</div><img src="img/team.jpg" alt="" loading="lazy"/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- end sTeam-->
 			</main>
 			<footer class="footer section">
-				<div class="footer__head">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<h3>Остались вопросы? </h3>
-								<div class="h5">Задайте их нашим специалистам</div>
-								<div class="small mb-3">Отправляя форму, я соглашаюсь с <a class="text-white" href="#">Политикой обработки персональных данных</a></div>
-							</div>
-							<div class="col-md-auto"><a class="btn btn-primary" href="#">Задать вопрос</a></div>
-						</div>
-					</div>
-				</div>
 				<div class="footer__body">
 					<div class="container">
 						<div class="row">
-							<div class="footer__col col-md-6"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
-								<div class="footer__caption">Фонд помощи участникам СВО
+							<div class="footer__col col-md-4"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
+								<div class="footer__caption">Фонд помощи ветеранам СВОи семьям погибших бойцов
 								</div>
 								<div class="footer__spacer">
 								</div>
-								<div class="row">
-									<div class="col-xl-auto smallest">© 2023. Все права защищены</div>
-									<div class="col-xl-auto smallest"> <a class="text-secondary" href="#">Политика конфиденциальности  </a></div>
-								</div>
+								<div class="row"></div>
 							</div>
-							<div class="footer__col col text-md-end">
+							<div class="footer__col col">
+								<ul>
+									<li><a href="#"> Меры поддержки</a></li>
+									<li><a href="#"> Медиа</a></li>
+									<li><a href="#"> Пресс-кит</a></li>
+									<li><a href="#"> Филиалы</a></li>
+									<li><a href="#"> Обращения граждан</a></li>
+									<li><a href="#"> Как помочь?</a></li>
+									<li><a href="#"> О фонде</a>
+										<ul>
+											<li><a href="#">Правовая информация</a></li>
+											<li><a href="#">Руководство Фонда</a></li>
+											<li><a href="#">Правление и советы Фонда</a></li>
+											<li><a href="#">Как помочь?</a></li>
+											<li><a href="#">Закупки</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__col col-auto">
+								<div class="h5"><a class="text-secondary" href="mailto:info@gosfondveteranov.ru">info@gosfondveteranov.ru</a></div>
+								<div class="h5"><a class="text-secondary" href="tel:88006589988">8 800 658 99 88</a></div>
 								<div class="footer__addr">г. Москва, Пречистенский переулок, 9А
-								</div>
-								<div class="h4"><a class="text-secondary" href="mailto:info@gosfondveteranov.ru">info@gosfondveteranov.ru</a></div>
-								<div class="footer__spacer">
-								</div>
-								<div class="soc">
-									<a class="soc__item" href="#" target="_blank">
-										<svg class="icon icon-telegram ">
-											<use xlink:href="img/svg/sprite.svg#telegram"></use>
-										</svg>
-									</a>
-									<a class="soc__item" href="#" target="_blank">
-										<svg class="icon icon-vk ">
-											<use xlink:href="img/svg/sprite.svg#vk"></use>
-										</svg>
-									</a>
-									<a class="soc__item" href="#" target="_blank">
-										<svg class="icon icon-ok ">
-											<use xlink:href="img/svg/sprite.svg#ok"></use>
-										</svg>
-									</a>
 								</div>
 							</div>
 						</div>
-						<div class="text-center"><img class="man" src="img/man.png" alt="" loading="lazy"/>
+						<div class="footer__footer">
+							<div class="row"> 
+								<div class="col-xl-auto smallest">© 2023. Все права защищены</div>
+								<div class="col smallest"> <a class="text-secondary" href="#">Политика конфиденциальности  </a></div>
+								<div class="col-auto">
+									<div class="soc">
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-telegram ">
+												<use xlink:href="img/svg/sprite.svg#telegram"></use>
+											</svg>
+										</a>
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-vk ">
+												<use xlink:href="img/svg/sprite.svg#vk"></use>
+											</svg>
+										</a>
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-ok ">
+												<use xlink:href="img/svg/sprite.svg#ok"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

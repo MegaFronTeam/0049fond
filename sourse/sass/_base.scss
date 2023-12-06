@@ -129,10 +129,11 @@ main{
 	@include bgs;
 	padding-top: var(--sPT);
 	padding-bottom: var(--sPB);
+	text-wrap: balance;
 }
 
 h2{
-	font-weight: bold;
+	font-weight: 400;
 }
 .section-title {
 	margin-bottom: var(--sTPB);
@@ -578,5 +579,25 @@ iframe {
 	.icon{
 		font-size: 16px;
 		stroke: currentColor;
+	}
+}
+.btn-light{
+	--bs-btn-color: #936037; 
+	--bs-btn-hover-color: #936037; 
+	--bs-btn-active-color: #936037;
+
+	--bs-btn-hover-bg: #ffecca;
+	--bs-btn-hover-border-color: #ffecca; 
+	--bs-btn-active-bg: #ffecca;
+	--bs-btn-active-border-color: #ffecca; 
+	--bs-btn-disabled-bg: #ffecca;
+	--bs-btn-disabled-border-color: #ffecca;
+	
+}
+
+
+h1{
+	@include media-breakpoint-up(xl) {
+		font-size: rem(60);
 	}
 }

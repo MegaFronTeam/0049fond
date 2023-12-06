@@ -4,8 +4,8 @@ mixin card-wrap2(num)
 			picture&attributes(attributes)
 				img(class="object-fit-js" src=`img/news-${num}.jpg` alt="" loading="lazy") 
 			+e.wrap
-				p Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи
 				+e.date 24 мая 2023
+				p Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи
 
 
 mixin sNews(t="Новости")
@@ -17,12 +17,11 @@ mixin sNews(t="Новости")
 					.col
 						h2= t
 					.col-auto
-						+e.control-wrap
-							+arrow()
-				+e.slider--js.swiper
-					.swiper-wrapper
-						+e.slide.swiper-slide: +card-wrap2('1')
-						+e.slide.swiper-slide: +card-wrap2('2')
-						+e.slide.swiper-slide: +card-wrap2('3')
+						a.btn.btn-primary(href="#") Все новости 
+			.row
+					+e.col.col-lg-6: +card-wrap2('1')
+					+e.col.col-lg-6: +card-wrap2('2')
+					+e.col.col-lg-6: +card-wrap2('3')
+					+e.col.col-lg-6: +card-wrap2('1')
 				
 	// end sNews

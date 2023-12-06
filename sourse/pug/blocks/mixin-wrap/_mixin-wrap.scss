@@ -23,7 +23,7 @@
 		
 	}
 	.icon{
-		font-size: rem(12);
+		font-size: rem(14);
 		&-ok{
 
 			font-size: rem(18);
@@ -95,11 +95,18 @@
 	input{
 		font-size: 14px;
 		width: 100%;
-		border: none !important;
+		// border: none !important;
+		border-radius: var(--Corner_radius_default, 8px);
+		border: 1px solid var(--LightGrey, #EDEDED);
 		outline: none !important;
-		padding-left: rem(30);
+		padding-left: rem(45);
 		padding-top: rem(14);
 		padding-bottom: rem(14);
+		font-size: 12px;
+		height: 48px;
+		&::placeholder{
+			color: var(--Grey, #C6C6C6);
+		}
 	}
 	.icon{
 		font-size: rem(20);
@@ -109,12 +116,18 @@
 		position: absolute;
 		left: 0;
 		top: 0;
+		padding-left: 12px;
 		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		background: none !important;
 		border: none !important;
+		.icon{
+			fill: none;
+			stroke: currentColor;
+			font-size: 24px;
+		}
 	}
 }
 

@@ -15,14 +15,24 @@
 
 	}
 	&__item{
-
+		--sp: 33px;
+			img{
+				right:calc(var(--sp) );
+				top: var(--sp);
+				position: absolute;
+			}
 			min-height: 100%;
-			padding-top: rem(33);
+			padding-top: var(--sp);
+			padding-left: var(--sp);
+			padding-right: var(--sp);
 			padding-bottom: rem(23);
 			border-top: 1px solid #D8D8D8;
+			position: relative;
+			
 			p{
-				opacity: 0.5;
-				max-width: 520px;
+				// opacity: 0.5;
+				// max-width: 520px;
+				font-size: 14px;
 			}
 	}
 
@@ -31,6 +41,8 @@
 		font-weight: bold;
 		margin-bottom: 1rem;
 		max-width: 600px;
+		padding-right: 55px;
+		text-wrap: balance;
 	}
 
 	@include media-breakpoint-up(xl) {}

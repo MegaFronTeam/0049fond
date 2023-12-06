@@ -18,3 +18,18 @@ mixin headerBlock2()
 			h1 Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи
 			p 24 мая 2023
 	// end headerBlock
+mixin headerBlockUpadte()
+	// start headerBlock
+	+b.headerBlock--update.section.pt-0#headerBlock&attributes(attributes)
+		.container
+			+e.inner
+				.row
+					+e.col.col-lg-auto
+						h1 Государственный фонд «Защитники Отечества»
+						p Персональная помощь семьям погибших бойцов и ветеранам специальной военной операции
+						+e.btns
+							+e.btn(href="#").btn.btn-primary Меры поддержки
+							+e.btn(href="#").btn.btn-outline-primary Обратиться
+					+e.img-wrap.col-lg.text-end
+						+img("img/head-img.png").res-i
+	// end headerBlock

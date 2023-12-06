@@ -42,40 +42,40 @@
 			<div class="top-nav block-with-lazy">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col"><a href="/"><img src="img/svg/logo.svg" alt=""/></a></div>
-						<div class="col-lg order-lg-0 order-last">
-							<div class="menu-mobile menu-mobile--js">
-								<div class="menu-mobile__inner">
-									<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-									</div>
-									<div class="d-md-none ps-3"><a href="/"><img src="img/svg/logo.svg" alt=""/></a></div>
-									<nav>
-										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О фонде</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Направления</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Новости</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Руководство</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
-										</ul>
-									</nav>
-									<div class="d-md-none ps-3">
-										<div class="row d-lg-flex d-block">
-											<div class="col-xl"><a class="link-dark strong" href="tel:88006588899">8 800 658 88 99</a></div>
-											<div class="col-xl-auto"><a class="strong link-secondary" href="#">Написать нам</a></div>
-										</div>
-									</div>
-								</div>
+						<div class="col-auto">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js btn btn-light"><span></span>
 							</div>
 						</div>
-						<div class="col-lg-3 col-auto text-end d-none d-md-block">
-							<div class="row d-lg-flex d-block">
-								<div class="col-xl"><a class="link-dark strong" href="tel:88006588899">8 800 658 88 99</a></div>
-								<div class="col-xl-auto"><a class="strong link-secondary" href="#">Написать нам</a></div>
+						<div class="col-lg-auto col"><a href="/"><img class="res-i" src="img/svg/logo.svg" alt=""/></a></div>
+						<div class="col-lg-auto order-lg-0 order-last d-none d-lg-block">
+							<nav>
+								<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О фонде</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Направления</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Медиа</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Руководство</a></li>
+									<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Филиалы</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-lg order-lg-0 order-first">
+							<div class="search-block">
+								<form>
+									<input type="text" placeholder="Поиск по сайту"/>
+									<button> 
+										<svg class="icon icon-search ">
+											<use xlink:href="img/svg/sprite.svg#search"></use>
+										</svg>
+									</button>
+								</form>
 							</div>
 						</div>
-						<div class="col-auto d-lg-none">
-							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-							</div>
+						<div class="col-auto">
+							<button class="btn btn-light" type="button">
+								<svg class="icon icon-glasses ">
+									<use xlink:href="img/svg/sprite.svg#glasses"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -117,54 +117,49 @@
 								<div class="col">
 									<h2>Еще новости</h2>
 								</div>
-								<div class="col-auto">
-									<div class="sNews__control-wrap">
-										<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
-											<svg class="icon icon-arrow-left ">
-												<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
-											</svg>
-										</div>
-										<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
-											<svg class="icon icon-arrow-right ">
-												<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
-											</svg>
-										</div>
-									</div>
-								</div>
+								<div class="col-auto"><a class="btn btn-primary" href="#">Все новости </a></div>
 							</div>
-							<div class="sNews__slider sNews__slider--js swiper">
-								<div class="swiper-wrapper">
-									<div class="sNews__slide swiper-slide">
-										<a class="card-item" href="#">
-											<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
-											<div class="card-item__wrap">
-												<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
-												<div class="card-item__date">24 мая 2023
-												</div>
-											</div>
-										</a>
+						</div>
+						<div class="row">
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
 									</div>
-									<div class="sNews__slide swiper-slide">
-										<a class="card-item" href="#">
-											<picture><img class="object-fit-js" src="img/news-2.jpg" alt="" loading="lazy"/></picture>
-											<div class="card-item__wrap">
-												<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
-												<div class="card-item__date">24 мая 2023
-												</div>
-											</div>
-										</a>
+								</a>
+							</div>
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-2.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
 									</div>
-									<div class="sNews__slide swiper-slide">
-										<a class="card-item" href="#">
-											<picture><img class="object-fit-js" src="img/news-3.jpg" alt="" loading="lazy"/></picture>
-											<div class="card-item__wrap">
-												<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
-												<div class="card-item__date">24 мая 2023
-												</div>
-											</div>
-										</a>
+								</a>
+							</div>
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-3.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
 									</div>
-								</div>
+								</a>
+							</div>
+							<div class="sNews__col col-lg-6">
+								<a class="card-item" href="#">
+									<picture><img class="object-fit-js" src="img/news-1.jpg" alt="" loading="lazy"/></picture>
+									<div class="card-item__wrap">
+										<div class="card-item__date">24 мая 2023
+										</div>
+										<p>Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи</p>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -172,57 +167,67 @@
 				<!-- end sNews-->
 			</main>
 			<footer class="footer section">
-				<div class="footer__head">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<h3>Остались вопросы? </h3>
-								<div class="h5">Задайте их нашим специалистам</div>
-								<div class="small mb-3">Отправляя форму, я соглашаюсь с <a class="text-white" href="#">Политикой обработки персональных данных</a></div>
-							</div>
-							<div class="col-md-auto"><a class="btn btn-primary" href="#">Задать вопрос</a></div>
-						</div>
-					</div>
-				</div>
 				<div class="footer__body">
 					<div class="container">
 						<div class="row">
-							<div class="footer__col col-md-6"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
-								<div class="footer__caption">Фонд помощи участникам СВО
+							<div class="footer__col col-md-4"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
+								<div class="footer__caption">Фонд помощи ветеранам СВОи семьям погибших бойцов
 								</div>
 								<div class="footer__spacer">
 								</div>
-								<div class="row">
-									<div class="col-xl-auto smallest">© 2023. Все права защищены</div>
-									<div class="col-xl-auto smallest"> <a class="text-secondary" href="#">Политика конфиденциальности  </a></div>
-								</div>
+								<div class="row"></div>
 							</div>
-							<div class="footer__col col text-md-end">
+							<div class="footer__col col">
+								<ul>
+									<li><a href="#"> Меры поддержки</a></li>
+									<li><a href="#"> Медиа</a></li>
+									<li><a href="#"> Пресс-кит</a></li>
+									<li><a href="#"> Филиалы</a></li>
+									<li><a href="#"> Обращения граждан</a></li>
+									<li><a href="#"> Как помочь?</a></li>
+									<li><a href="#"> О фонде</a>
+										<ul>
+											<li><a href="#">Правовая информация</a></li>
+											<li><a href="#">Руководство Фонда</a></li>
+											<li><a href="#">Правление и советы Фонда</a></li>
+											<li><a href="#">Как помочь?</a></li>
+											<li><a href="#">Закупки</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__col col-auto">
+								<div class="h5"><a class="text-secondary" href="mailto:info@gosfondveteranov.ru">info@gosfondveteranov.ru</a></div>
+								<div class="h5"><a class="text-secondary" href="tel:88006589988">8 800 658 99 88</a></div>
 								<div class="footer__addr">г. Москва, Пречистенский переулок, 9А
-								</div>
-								<div class="h4"><a class="text-secondary" href="mailto:info@gosfondveteranov.ru">info@gosfondveteranov.ru</a></div>
-								<div class="footer__spacer">
-								</div>
-								<div class="soc">
-									<a class="soc__item" href="#" target="_blank">
-										<svg class="icon icon-telegram ">
-											<use xlink:href="img/svg/sprite.svg#telegram"></use>
-										</svg>
-									</a>
-									<a class="soc__item" href="#" target="_blank">
-										<svg class="icon icon-vk ">
-											<use xlink:href="img/svg/sprite.svg#vk"></use>
-										</svg>
-									</a>
-									<a class="soc__item" href="#" target="_blank">
-										<svg class="icon icon-ok ">
-											<use xlink:href="img/svg/sprite.svg#ok"></use>
-										</svg>
-									</a>
 								</div>
 							</div>
 						</div>
-						<div class="text-center"><img class="man" src="img/man.png" alt="" loading="lazy"/>
+						<div class="footer__footer">
+							<div class="row"> 
+								<div class="col-xl-auto smallest">© 2023. Все права защищены</div>
+								<div class="col smallest"> <a class="text-secondary" href="#">Политика конфиденциальности  </a></div>
+								<div class="col-auto">
+									<div class="soc">
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-telegram ">
+												<use xlink:href="img/svg/sprite.svg#telegram"></use>
+											</svg>
+										</a>
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-vk ">
+												<use xlink:href="img/svg/sprite.svg#vk"></use>
+											</svg>
+										</a>
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-ok ">
+												<use xlink:href="img/svg/sprite.svg#ok"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

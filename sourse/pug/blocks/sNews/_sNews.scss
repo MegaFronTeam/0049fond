@@ -117,10 +117,23 @@
 .card-item {
 	color: #000000 !important; 
 	display: block;
+	display: flex;
+	align-items: flex-start;
 	picture {
+		border-radius: var(--Corner_radius_default, 8px); 
 		// background-color: $dark;
 		margin-bottom: rem(20);
 		overflow: hidden;
+		position: relative;
+		margin-right: 10px;
+		@include media-breakpoint-up(sm) {
+			margin-right: 20px;
+			width: 270px;
+			flex: 1 0 270px;
+		}
+		width: 30%;
+		flex: 1 0 30%;
+		aspect-ratio: 1;
 		img {
 			position: absolute;
 			top: 0;

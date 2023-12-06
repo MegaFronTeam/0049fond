@@ -1,5 +1,5 @@
 mixin menu-toggle()
-	+b.toggle-menu-mobile--js.d-lg-none
+	+b.toggle-menu-mobile--js
 		span
 mixin mob-mnu()
 	-
@@ -12,7 +12,7 @@ mixin mob-mnu()
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
 	+b.menu-mobile--js
-		+b.toggle-menu-mobile--js
+		+b.toggle-menu-mobile--js&attributes(attributes)
 			span
 		+e.inner
 			+mnu()
@@ -28,22 +28,17 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			.row
-				.col-lg-3.col
+				.col-auto
+					+b.toggle-menu-mobile--js.btn.btn-light
+						span
+				.col-lg-auto.col
 					a(href="/")
-						img(src="img/svg/logo.svg", alt="") 
-				.col-lg.order-lg-0.order-last
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
-							+menu-toggle()
-							.d-md-none.ps-3
-								a(href="/")
-									img(src="img/svg/logo.svg", alt="") 
-							+mnu()
-							.d-md-none.ps-3
-								+contact()
-					
-				.col-lg-3.col-auto.text-end.d-none.d-md-block
-					+contact()
-				.col-auto.d-lg-none
-					+menu-toggle()
+						img(src="img/svg/logo.svg", alt="").res-i 
+				.col-lg-auto.order-lg-0.order-last.d-none.d-lg-block
+					+mnu()
+				.col-lg.order-lg-0.order-first
+					+search()
+				.col-auto
+					button.btn.btn-light(type="button")
+						+icon("glasses")
 	// end top-nav
