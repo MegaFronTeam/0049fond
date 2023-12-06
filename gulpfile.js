@@ -40,6 +40,9 @@ function browsersync() {
         server: {
             baseDir: './' + publicPath,
             // middleware: bssi({ baseDir: './' + publicPath, ext: '.html' })
+            serveStaticOptions: {
+                extensions: ['html']
+            }
         },
         // ghostMode: { clicks: false },
         // notify: false,
