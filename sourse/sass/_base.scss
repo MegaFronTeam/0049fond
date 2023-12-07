@@ -137,6 +137,16 @@ h2{
 }
 .section-title {
 	margin-bottom: var(--sTPB);
+	&__links{
+		a{
+			font-size: rem(24);
+			color: var(--txt, #595D6C);
+			&:hover,
+			&.active{
+				color: $primary;
+			}
+		}
+	}
 }
 
 
@@ -560,9 +570,9 @@ iframe {
 }
 
 .inner-page{
-	h1{
-		@include rfs(40px);
-	}
+	// h1{
+	// 	@include rfs(40px);
+	// }
 	.headerBlock{
 		p{
 			font-weight: 300;
@@ -599,5 +609,31 @@ iframe {
 h1{
 	@include media-breakpoint-up(xl) {
 		font-size: rem(60);
+	}
+}
+
+.page-head{
+
+	h1{
+		font-weight: bold;
+		line-height: 1;
+	}
+}
+
+.page-artical h1{
+	font-weight: 400;
+}
+
+.date-artical{
+	font-weight: 300;
+	font-style: italic;
+	opacity: 0.5;
+	color: #000;
+}
+
+.share-line{
+	align-items: center;
+	.soc__item{
+		border-radius: 50%;
 	}
 }

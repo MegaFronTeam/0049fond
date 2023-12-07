@@ -5,11 +5,11 @@
 	// --sTPB: #{rem()}; 
 	// min-height: 100vh;
 	// min-height: calc(var(--vh, 1vh) * 100);
-	@include media-breakpoint-up(lg) {
-		padding-top: 165px;
-	}
-	padding-top: 105px;
-	background-color: $light;
+	// @include media-breakpoint-up(lg) {
+	// 	padding-top: 165px;
+	// }
+	// padding-top: 105px;
+	// background-color: $light;
 	
 	&__row{
 		// --bs-gutter-x: #{rem()};

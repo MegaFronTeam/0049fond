@@ -15,11 +15,11 @@ include ../blocks/top-nav/_top-nav.pug
 include ../blocks/footer/_footer.pug
 
 block variables
-	- let  mainPage= 'main-page' 
+	- let  mainPage= 'inner-page' 
 	- let  bg= null
 
 block title
-	- let  title= index.head.title
+	- let  title= 'Медиа'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -27,12 +27,9 @@ block pagecontent
 	
 	+top-nav
 	main
-		+headerBlockUpadte 
-		+sAbout
-		+sDirections
-		//- +sQoute
-		+sNews('main-page')
-		//- +sTeam
+		+page-head('',title, title)
+			
+		+sNewsPage2("Еще новости")
 	+footer
       
 

@@ -25,6 +25,10 @@
 	img{
 		@extend .res-i;
 		margin-bottom: 30px;
+		border-radius: var(--Corner_radius_default, 8px);
+	}
+	.container{
+		max-width: 1144px;
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

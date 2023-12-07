@@ -15,11 +15,11 @@ include ../blocks/top-nav/_top-nav.pug
 include ../blocks/footer/_footer.pug
 
 block variables
-	- let  mainPage= 'inner-page' 
+	- let  mainPage= 'inner-page page-artical' 
 	- let  bg= null
 
 block title
-	- let  title= '02-news-page.html'
+	- let  title= 'Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -27,9 +27,11 @@ block pagecontent
 	
 	+top-nav
 	main
-		+headerBlock2
+		+page-head('24 мая 2023', title, 'Медиа', title)
 		+sContent
-		+sNews("Еще новости")
+		+sNews("Другие новости")
+			.text-center.mt-4
+				a.btn.btn-outline-primary(href="#") Показать еще
 	+footer
       
 

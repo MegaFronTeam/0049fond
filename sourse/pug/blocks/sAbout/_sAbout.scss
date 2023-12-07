@@ -76,6 +76,8 @@
 		}
 		p{
 			margin-bottom: 30px;
+			line-height: 140%;
+		text-wrap: balance;
 			@include media-breakpoint-up(sm) {
 
 				max-width:730px;

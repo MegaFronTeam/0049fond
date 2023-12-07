@@ -16,12 +16,58 @@ mixin sNews(t="Новости")
 				.row
 					.col
 						h2= t
-					.col-auto
-						a.btn.btn-primary(href="#") Все новости 
+					if t !== "Другие новости"
+						.col-auto
+							a.btn.btn-primary(href="#") Все новости 
 			.row
-					+e.col.col-lg-6: +card-wrap2('1')
-					+e.col.col-lg-6: +card-wrap2('2')
-					+e.col.col-lg-6: +card-wrap2('3')
-					+e.col.col-lg-6: +card-wrap2('1')
-				
+					- let classes = "col-lg-6"
+					if t === "Другие новости"
+						- classes = "col-xl-3 col-lg-4 col-md-6"
+					+e.col(class= classes): +card-wrap2('1')
+					+e.col(class= classes): +card-wrap2('2')
+					+e.col(class= classes): +card-wrap2('3')
+					+e.col(class= classes): +card-wrap2('1')
+			block
+	// end sNews
+
+mixin sNewsPage(t="Новости")
+	// start sNews
+	+b.SECTION.sNews.section#sNews&attributes(attributes)
+		.container
+			+b.section-title
+				+e.links.row
+					.col-auto
+						a(href="#").active Новости
+					.col-auto
+						a(href="#") Мультимедиа
+			.row
+				- for (var x = 0; x < 4; x++)
+					+e.col.col-xl-3.col-lg-4.col-md-6: +card-wrap2('1')
+					+e.col.col-xl-3.col-lg-4.col-md-6: +card-wrap2('2')
+					+e.col.col-xl-3.col-lg-4.col-md-6: +card-wrap2('3')
+					+e.col.col-xl-3.col-lg-4.col-md-6: +card-wrap2('1')
+			.text-center.mt-4
+				a.btn.btn-outline-primary(href="#") Показать еще
+	// end sNews
+
+mixin sNewsPage2(t="Новости")
+	// start sNews
+	+b.SECTION.sNews.section#sNews&attributes(attributes)
+		.container
+			+b.section-title
+				+e.links.row
+					.col-auto
+						a(href="#") Новости
+					.col-auto
+						a(href="#").active Мультимедиа
+			- for (var x = 0; x < 5; x++)
+				+b.A.card-item--album(href="#")
+					+e.wrap
+						+e.date 24 мая 2023
+						p Название альбома в одну или несколько строк для наглядности отображения контента
+						+e.count 16 фото
+					picture&attributes(attributes)
+						img(class="object-fit-js" src=`img/news-1.jpg` alt="" loading="lazy") 
+			.text-center.mt-4
+				a.btn.btn-outline-primary(href="#") Показать еще
 	// end sNews

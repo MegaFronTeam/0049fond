@@ -4,8 +4,11 @@
 		--bs-gutter-x: #{rem(84)};
 		--bs-gutter-y: #{rem(43)};
 		@include media-breakpoint-up(lg) {
-			--bs-gutter-y: #{rem(4)};
 		}
+	}
+	.row{
+		--bs-gutter-y: #{rem(40)};
+
 	}
 	&__col{
 
@@ -117,22 +120,23 @@
 .card-item {
 	color: #000000 !important; 
 	display: block;
-	display: flex;
+	
 	align-items: flex-start;
+	@include media-breakpoint-down(md) {
+		display: flex;
+		picture {
+			width: 30%;
+			flex: 1 0 30%;
+			margin-right: 10px;
+		}
+	}
 	picture {
 		border-radius: var(--Corner_radius_default, 8px); 
 		// background-color: $dark;
 		margin-bottom: rem(20);
 		overflow: hidden;
 		position: relative;
-		margin-right: 10px;
-		@include media-breakpoint-up(sm) {
-			margin-right: 20px;
-			width: 270px;
-			flex: 1 0 270px;
-		}
-		width: 30%;
-		flex: 1 0 30%;
+		
 		aspect-ratio: 1;
 		img {
 			position: absolute;
@@ -159,7 +163,7 @@
 &__wrap {
 	// display: flex;
 	// justify-content: space-between;
-	margin: 0 10px;
+	// margin: 0 10px;
 	// max-width: 533px;
 	p {
 		font-size: rem(16);
@@ -178,6 +182,7 @@
 	opacity: 0.5;
 	font-weight: 300;
 	font-style: italic;
+	margin-bottom: 10px;
 	// text-align: right;
 	// // display: flex;
 	// // flex-direction: column;
@@ -187,5 +192,77 @@
 	// 	white-space: nowrap;
 	// }
 }
+	&--album{
+		display: flex;
+		@include media-breakpoint-up(sm) {
 
+			padding: 24px;
+		}
+		padding: 24px 12px;
+		border-radius: 4px;
+		border-top: 1px solid var(--Grey, #C6C6C6);
+		border-bottom: 1px solid var(--Grey, #C6C6C6);
+		align-items: normal;
+		&:hover{
+			background: var(--LightGrey, #EDEDED);
+			p{
+
+				color: var(--Brown, #936037);
+			}
+		}
+		.card-item{
+			&__count{
+				opacity: 0.5;
+				color: #000;
+				font-weight: 300;
+				font-style: italic;
+			}
+			&__wrap{
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				// height: 100%;
+				p{
+					@include media-breakpoint-up(sm) {
+
+						font-size: 24px;
+					}
+					margin-bottom: auto;
+					max-width: 800px;
+				}
+			}
+		}
+		picture{
+
+			margin-left: 10px;
+			margin-right: 0 !important;
+			align-self: flex-start;
+			@include media-breakpoint-up(sm) {
+			aspect-ratio: 474 / 235;
+				margin-left: 20px;
+				margin-bottom: 0;
+				width: 100%;
+				max-width: 25%;
+				flex: 1 0 25%;
+			}
+			width: 30%;
+			flex: 1 0 30%;
+		}
+	}
+}
+
+.main-page{
+	.card-item{
+		display: flex;
+		picture{
+			margin-right: 10px;
+			@include media-breakpoint-up(sm) {
+				margin-right: 20px;
+				width: 270px;
+				flex: 1 0 270px;
+			}
+			width: 30%;
+			flex: 1 0 30%;
+		}
+	}
 }
