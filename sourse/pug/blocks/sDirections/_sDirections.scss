@@ -45,6 +45,73 @@
 		text-wrap: balance;
 	}
 
+	&__inner{
+		color: #fff;
+		overflow: hidden;
+		border-radius: var(--Corner_radius_default, 8px);
+		img{
+			object-position: top;
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			z-index: -1;
+			border-radius: var(--Corner_radius_default, 8px);
+			background: linear-gradient(101deg, #000 8.81%, rgba(0, 0, 0, 0.00) 77.16%), linear-gradient(0deg, rgba(147, 96, 55, 0.60) 0%, rgba(147, 96, 55, 0.60) 100%);
+		}
+		padding: 32px;
+		h5{
+			max-width: none;
+			margin-bottom: 32px;
+		}
+
+	}
+	&__item-dd {
+		max-width: 613px;
+		p{
+			max-width: 100% !important;
+		}
+	}
+	&__title-dd{
+		cursor: pointer;
+		font-size: 20px;
+
+		padding-bottom: 16px;
+		span{
+			padding-right: 30px;
+
+			position: relative;
+		}
+		.icon{
+			position: absolute;
+			right: 0;
+			font-size: 24px;
+			fill: none;
+			stroke: #DE5A14;
+			stroke-width: 2;
+			@include mt;
+			margin-top: 3px;
+		}
+		 
+	}
+	.active{
+		.dd-head-js{
+			color: var(--Yellow, #FBBB31);
+
+		}
+		.icon{
+			stroke: var(--Yellow, #FBBB31);
+			rotate: 90deg;
+		}
+	}
+	.dd-content-js{
+		display: none;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
