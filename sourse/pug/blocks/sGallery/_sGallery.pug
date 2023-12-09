@@ -1,0 +1,10 @@
+mixin sGallery(data)
+	// start sGallery
+	+b.sGallery.section#sGallery&attributes(attributes)
+		.container
+			+e.row.row
+				- for (var x = 1; x < 10; x++)
+					+e.col.col
+						+e.item(href=`img/gal-${x}.jpg` data-fancybox="gal")
+							+img(`img/gal-${x}.jpg`)
+	// end sGallery

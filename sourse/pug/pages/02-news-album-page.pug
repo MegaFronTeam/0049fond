@@ -9,17 +9,17 @@ include ../blocks/sAbout/_sAbout.pug
 include ../blocks/sDirections/_sDirections.pug
 include ../blocks/sQoute/_sQoute.pug
 include ../blocks/sTeam/_sTeam.pug
-include ../blocks/sNews/_sNews.pug
+include ../blocks/sGallery/_sGallery.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/top-nav/_top-nav.pug 
 include ../blocks/footer/_footer.pug
 
 block variables
-	- let  mainPage= 'inner-page' 
+	- let  mainPage= 'inner-page page-artical' 
 	- let  bg= null
 
 block title
-	- let  title= 'Медиа'
+	- let  title= 'Название альбома в одну или несколько строк для наглядности отображения контента'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -27,9 +27,9 @@ block pagecontent
 	
 	+top-nav
 	main
-		+page-head('',title, title)
-			
-		+sNewsPage2("Еще новости")
+		+page-head('24 мая 2023', title, 'Медиа', title)
+		
+		+sGallery 
 	+footer
       
 
