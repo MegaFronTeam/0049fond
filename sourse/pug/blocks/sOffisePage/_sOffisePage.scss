@@ -1,0 +1,57 @@
+// start .sOffisePage
+.sOffisePage {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: #{rem(20)};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__head{
+		font-size: 20px;
+		color: var(--Brown, #936037);
+		margin-bottom: 20px;
+		.icon{
+			font-size: 24px;
+			margin-right: 8px;
+			position: relative;
+			top: -1px;
+		}
+	}
+	&__map{
+		border-radius: 12px;
+		border: 1px solid var(--Stroke, #D8D8D8); 
+		// aspect-ratio: 670 / 300;
+		position: relative;
+		max-width: 670px;
+		height: 300px;
+		overflow: hidden;
+	}
+	&__col{
+		max-width: 500px;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sOffisePage
+
+.smallest{
+	font-size: 12px;
+}
+.mb-3{
+	margin-bottom: 16px;
+}

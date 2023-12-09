@@ -1,0 +1,30 @@
+mixin sOffisePage(data)
+	// start sOffisePage
+	+b.sOffisePage.section#sOffisePage&attributes(attributes)
+		.container
+			+e.head
+				+icon('location')
+				.d-inline-block Камчатский край 
+				.d-inline-block ·
+				.d-inline-block  ул. Центральный проезд Хорошевского Серебряного Бора, д. 145
+				
+			+e.row.row
+				.col
+					+e.map#map
+					script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=2066e304-cee0-4ed2-9cb2-5f6521d5f96c") 
+					script
+						include script.js
+				+e.col.col
+					div.mb-3
+						.smallest Руководитель филиала
+						.small Константинопольский Константин Константинович
+					
+					p Описание филиала разбавленное изрядной долей эмпатии, рациональное мышление выявляет срочную потребность системы массового участия.
+					.smallest Руководитель филиала
+					p
+						a(href="tel:8-800-000-00-00") 8-800-000-00-00
+					.smallest Руководитель филиала
+					p
+						a(href="mailto:example@mail.com") example@mail.com
+					+soc
+	// end sOffisePage
