@@ -473,6 +473,21 @@ function eventHandler() {
 	// NewsSwiperMd.controller.control = NewsSwiper;
 	// NewsSwiperMd2.controller.control = NewsSwiper;
 
+	
+
+	let panzoomClass = document.querySelector('.f-panzoom');
+	if (panzoomClass) {
+		new Panzoom(panzoomClass, {
+			// wheel: false,
+			// // baseScale: 0,
+			// click: false,
+			// zoomInCentered: false,
+			Toolbar: {
+				display: ["zoomIn", "zoomOut"],
+			},
+		}, { Toolbar });
+	};
+
 
 };
 if (document.readyState !== 'loading') {

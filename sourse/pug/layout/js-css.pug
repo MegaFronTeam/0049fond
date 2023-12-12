@@ -8,6 +8,8 @@ mixin allcss()
 	link(href="libs/swiper/swiper-bundle.min.css", rel="stylesheet")
 	link(href="libs/@fancyapps/ui/fancybox/fancybox.css", rel="stylesheet")
 	//- link(href=`css/main.min.css?v=${version}`, rel="stylesheet")
+	link(href="libs/@fancyapps/ui/panzoom/panzoom.toolbar.css", rel="stylesheet")
+	link(href="libs/@fancyapps/ui/panzoom/panzoom.css", rel="stylesheet")
 	link(href=`css/main.min.css`, rel="stylesheet")
 
 mixin allcjs() 
@@ -15,5 +17,9 @@ mixin allcjs()
 	script(src="libs/@fancyapps/ui/fancybox/fancybox.umd.js") 
 	script(src="libs/swiper/swiper-bundle.min.js")  
 	script(src="libs/inputmask/inputmask.min.js") 
+
+	
+	script(src="libs/@fancyapps/ui/panzoom/panzoom.umd.js") 
+	script(src="libs/@fancyapps/ui/panzoom/panzoom.toolbar.umd.js") 
 	//- script(src=`js/common.js?v=${version}`)
 	script(src=`js/common.js`)
