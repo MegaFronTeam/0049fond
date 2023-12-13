@@ -28,6 +28,9 @@
 		display: block;
 		font-size: 14px;
 		padding: rem(20) calc(var(--bs-gutter-x) / 2);
+		&.selected {
+			color: $primary;
+		}
 	}
 }
 
