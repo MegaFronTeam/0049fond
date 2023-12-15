@@ -4,8 +4,8 @@
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	&__row{
-		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
+		--bs-gutter-x: #{rem(20)};
+		--bs-gutter-y: #{rem(20)};
 
 	}
 	h2{
@@ -48,11 +48,7 @@
 		line-height: 1;
 		margin-bottom: 15px;
 	}
-	&__prof{
-		opacity: 0.5;
-		font-weight: 300;
-		font-style: italic;
-	}
+	
 
 
 	@include media-breakpoint-up(xl) {}
@@ -63,3 +59,65 @@
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
 } // end.sTeam
+
+.team-item{
+	padding: rem(40);
+	@include media-breakpoint-up(lg){
+		padding-right: 0;
+	}
+	position: relative;
+	overflow: hidden;
+	&--main{
+		padding-right: rem(40);
+		margin-bottom: 20px;
+	}
+	border-radius: var(--Corner_radius_default, 8px);
+	background: var(--LightBG, #FDF1DB);
+	padding-bottom: 0;
+	&__caption{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: rem(40);
+
+	}
+	&__title{
+		@include rfs(24px);
+		line-height: 1.2;
+		margin-bottom: 0.4em;
+	}
+	&--main &__title{
+		@include rfs(40px);
+		
+	}
+	p{
+		max-width: trm(635);
+		font-size: rem(20);
+		color: #595D6C;
+	}
+	&__prof{
+		opacity: 0.5;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 19.6px */
+		margin-bottom: auto;
+		padding-bottom: 1rem;
+	}
+	&--main &__img-wrap{
+		@include media-breakpoint-up(lg) {
+			width: auto  !important;
+		}
+	}
+	&__img-wrap{
+		text-align: center;
+		@include media-breakpoint-up(xl) {
+
+			width: 49% !important;
+		}
+		@include media-breakpoint-up(lg) {
+			width: 40% !important;
+			text-align: right;
+		}
+		align-self: flex-end;
+	}
+}

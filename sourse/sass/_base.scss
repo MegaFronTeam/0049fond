@@ -24,6 +24,7 @@ html{
 }
 
 body {
+	
 	&[class*="fixed"],
 	&.fancybox-active{
 		.header{ 
@@ -138,6 +139,7 @@ h2{
 }
 .section-title {
 	margin-bottom: var(--sTPB);
+	text-wrap: balance;
 	&__links{
 		a{
 			font-size: rem(24);

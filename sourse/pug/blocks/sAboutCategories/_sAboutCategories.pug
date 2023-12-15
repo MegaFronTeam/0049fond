@@ -1,0 +1,15 @@
+mixin sAboutCategories(data)
+	// start sAboutCategories
+	+b.SECTION.sAboutCategories.section#sAboutCategories&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Фонд «Защитники Отечества» и Федеральная нотариальная палата заключили соглашение о предоставлении ветеранам СВО бесплатной юридической помощи
+				
+			ul
+				- let list  = ['Правовая информация','Руководство фонда','Правление и советы фонда','Контакты','Закупки','Как помочь']
+				each item in list
+					li
+						a(href="#")= item
+							+e.icon-wrap
+								+icon("arrow-right2")
+	// end sAboutCategories

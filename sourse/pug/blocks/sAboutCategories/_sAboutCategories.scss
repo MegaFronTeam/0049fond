@@ -1,0 +1,83 @@
+// start .sAboutCategories
+.sAboutCategories {
+	// --sPT: #{rem()};
+	& + .sAbout{
+
+		--sPT: #{rem(0)};
+		--sPB:#{rem(60)};
+	}
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+
+	ul{
+		list-style: none;
+		display: grid;
+		@include media-breakpoint-up(lg) {
+			
+			grid-template-columns: repeat( 3, 1fr);
+		}
+		@include media-breakpoint-up(sm) {
+		grid-template-columns: repeat(2, 1fr);
+		}
+		gap: 0 20px;
+		a{
+			border-top: 1px solid #D8D8D8;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-left: 33px;
+			padding-right: 33px;
+			height: 98px;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 700;
+			color: $body-color;
+			@include mt;
+			&:hover{
+				--right: 4px;
+			}
+		}
+	}
+
+	&__icon-wrap{
+		width: rem(32);
+		height: rem(32);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #936037;
+		border: 1px solid;
+		border-radius: 3px;
+		@include mt;
+		position: relative;
+		translate: var(--right, 0) 0 ;
+		.icon{
+			fill: none;
+			stroke: currentColor;
+			font-size: rem(12);
+		}
+	}
+	li{
+
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAboutCategories

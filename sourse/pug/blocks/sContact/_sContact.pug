@@ -2,8 +2,15 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
+			+b.section-title
+				h2 Государственный фонд «Защитники Отечества»
+			p г. Москва, Пречистенский переулок, 9А
+			p: a(href="tel:88006589988") 8 800 658 99 88
+			p: a(href="mailto:info@gosfondveteranov.ru") info@gosfondveteranov.ru
+			+soc
 			+e.row.row
+				.col-auto
+					a.btn.btn-primary(href="#") Направить обращение
+				.col-auto
+					a.btn.btn-outline-primary(href="#") Найти ближайшее отделение
 	// end sContact

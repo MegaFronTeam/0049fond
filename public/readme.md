@@ -6,3 +6,7 @@
 6. <https://megafronteam.github.io/0049fond/public/03-offices>
 7. <https://megafronteam.github.io/0049fond/public/03-office-page>
 8. <https://megafronteam.github.io/0049fond/public/404>
+9. <https://megafronteam.github.io/0049fond/public/04-about>
+10. <https://megafronteam.github.io/0049fond/public/05-legal-info>
+11. <https://megafronteam.github.io/0049fond/public/06-management>
+12. <https://megafronteam.github.io/0049fond/public/08-contacts>

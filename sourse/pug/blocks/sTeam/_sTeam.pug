@@ -1,14 +1,27 @@
 mixin sTeam(data)
 	// start sTeam
-	+b.SECTION.sTeam.section#sTeam&attributes(attributes)
+	+b.sTeam.section#sTeam&attributes(attributes)
 		.container
+			+b.team-item--main
+				.row
+					+e.caption.col 
+						+e.title Анна 
+							br
+							| Цивилева
+						+e.prof Председатель фонда
+						p «Чтобы обеспечить защитников Родины всем необходимым, окружить их заботой и вниманием и помочь вернуться к привычной жизни, социальным координаторам необходимы такие личные качества, как вовлеченность и неравнодушие. Справедливость, забота и уважение к героям».
+					+e.img-wrap.col-lg-auto 
+						+img('img/main-team-img.png').res-i
 			+e.row.row
-				.col-lg-6
-					h2 Руководство фонда
-				.col-lg-6
-					+e.img-wrap
-						+e.caption
-							+e.name Анна <br> Цивилева
-							+e.prof Председатель фонда
-						+img('img/team.jpg')
+				- for (var x = 0; x < 6; x++)
+					+e.col.col-lg-6
+						+b.team-item
+							.row
+								+e.caption.col 
+									+e.title Константин Константинпольский
+									+e.prof Должность
+								+e.img-wrap.col-md-auto 
+									+img('img/team-item.png').res-i
+			.mt-5.text-center
+				a.btn.btn-outline-primary(href="#") Филиалы фонда
 	// end sTeam

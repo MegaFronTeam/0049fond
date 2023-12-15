@@ -1,0 +1,33 @@
+mixin sDocuments(h2)
+	// start sDocuments
+	+b.SECTION.sDocuments.section&attributes(attributes)
+		.container
+			+b.section-title
+				if h2
+					h2= h2
+				if block
+					block
+				else
+					+e.links.row
+						.col-auto
+							a(href="#").active Закон
+						.col-auto
+							a(href="#") Указ
+						.col-auto
+							a(href="#") Постановление
+						.col-auto
+							a(href="#") Распоряжение
+						.col-auto
+							a(href="#") Приказ
+						.col-auto
+							a(href="#") Протокол
+			+e.grid
+				- let list  = ['Документ для скачивания', 'Перечень подходящих устройств пример длинного заголовка ','Перечень подходящих устройств пример длинного заголовка ','Перечень подходящих устройств пример длинного заголовка важный текст для раскрытия заголовка более содержательный', 'Документ для скачивания', 'Перечень подходящих устройств пример длинного заголовка ','Перечень подходящих устройств пример длинного заголовка ','Перечень подходящих устройств пример длинного заголовка важный текст для раскрытия заголовка более содержательный',]
+				each item in list
+					+b.document-item(href="#")
+						+icon("file")
+						+e.title= item
+						+e.size 18.04.2023 / pdf 15 mb. 
+			.text-center
+				a.btn.btn-outline-primary(href="#") Показать еще
+	// end sDocuments

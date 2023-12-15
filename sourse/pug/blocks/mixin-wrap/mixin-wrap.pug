@@ -45,11 +45,11 @@ mixin page-head(date,t,...items)
 			+breadcrumb('Главная',...items)
 
 			if t !== '404'
-				if date
+				if date 
 					a(href="#").back.text-body
 						+icon("arrow-left")
 				h1= t
-			if date && data !=='hide'
+			if date && date !=='hide'
 				.date-artical= date
 
 
