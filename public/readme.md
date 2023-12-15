@@ -5,3 +5,4 @@
 5. <https://megafronteam.github.io/0049fond/public/02-news-album-page>
 6. <https://megafronteam.github.io/0049fond/public/03-offices>
 7. <https://megafronteam.github.io/0049fond/public/03-office-page>
+8. <https://megafronteam.github.io/0049fond/public/404>

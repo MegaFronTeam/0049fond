@@ -1,0 +1,40 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sDirections/_sDirections.pug
+include ../blocks/sQoute/_sQoute.pug
+include ../blocks/sTeam/_sTeam.pug
+include ../blocks/sMap/_sMap.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'inner-page page-404' 
+	- let  bg= null
+
+block title
+	- let  title= 'Филиалы'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+top-nav
+	main
+		+page-head(' ', '404','Филиалы','Петропавловск-Камчатский')
+		.s404.section
+			h1 404
+			p Страница не найдена
+			a.btn.btn-outline-primary(href="#") На главную
+		//- +sMap
+	+footer
+      
+
+
+

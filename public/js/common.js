@@ -478,7 +478,7 @@ function eventHandler() {
 	let panzoomClass = document.querySelector('.f-panzoom');
 	if (panzoomClass) {
 		new Panzoom(panzoomClass, {
-			// wheel: false,
+			wheel: false,
 			// // baseScale: 0,
 			// click: false,
 			// zoomInCentered: false,
