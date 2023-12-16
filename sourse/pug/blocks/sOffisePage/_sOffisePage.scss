@@ -38,7 +38,14 @@
 		overflow: hidden;
 	}
 	&__col{
-		max-width: 500px;
+		@include media-breakpoint-up(sm) {
+
+			max-width: 500px;
+		}
+		@include media-breakpoint-down(sm) {
+			flex: 1 1 100%;
+		}
+		width: 100%;
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
