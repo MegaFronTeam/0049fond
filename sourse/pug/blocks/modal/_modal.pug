@@ -2,15 +2,71 @@
 mixin modal() 
 	//  start modals
 	div(id="modal-call"  style="display: none" )
-		+b.modal-win
-			+form-wrap
-				.text-center
-					+e.title.form-data.h3.ttu Обратный звонок
-					p.after-headline Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут
-
-				+input("Ваше Имя")(required)  
-				+e.BUTTON.btn.btn(type="submit"  )  
-				+policy()
+		+b.modal-win.p-0
+			+e.head
+				+e.title Стать партнером
+			+e.body
+				P Вы можете оставить свои данные и с Вами свяжутся наши специалисты, либо обратиться в Государственный фонд «Защитники Отечества»
+				.row
+					.col-sm-6
+						.text-dark По телефону:
+						p: a(href="tel:+7(495)230-01-54p312").text-body.strong +7 (495) 230-01-54 (доб. 312)
+					.col-sm-6
+						.text-dark По электронной почте:
+						p: a(href="mailto:mail@gosfondveteranov.gov.ru").text-body.strong mail@gosfondveteranov.gov.ru
+				p.text-center.text-body.strong Анкета партнера Государственного фонда «Защитники Отечества»
+				+form-wrap
+					.row
+						.col-12
+							+input("Название организации",'text','Название организации')
+						.col-12
+							+input("Ваше имя",'text','Ваше имя') 
+						.col-lg-6
+							+input("+7 ___-___-__-__",'tel','Контактный телефон')
+						.col-lg-6
+							+input("example@mail.ru",'tel','Электронная почта')
+						.col-12
+							+input("Опишите Ваше предложение",'textarea','Ваше предложение')
+						.col-12.text-end 
+							button.btn.btn-primary(type="submit"  )  Отправить анкету
+	// #modal-call
+	
+	//  start modals
+	div(id="modal-call2"  style="display: none" )
+		+b.modal-win.p-0
+			+e.head
+				+e.title Своих не бросаем!
+			+e.body
+				+form-wrap
+					.row
+						.col-12
+							+input("Оформить пожертвование он-лайни",'select')
+						.col-12
+							+input("Анонимно",'text','Благотворитель ФИО')
+						.col-12
+							+input("0,00 ₽",'text','Сумма пожертвования') 
+						.col-12
+							+e.input-wrap.form-group
+								+e.SPAN.input-title Назначение платежа
+								+e.TEXTAREA.input.form-control(name=name placeholder="Сообщение")
+									| На организацию и оказание поддержки и помощи лицам, принимавшим участие в специальной военной операции
+						.col-lg-12
+							+input("example@mail.ru",'tel','E-mail для квитанции')
+					
+						.col-12
+							+b.file-download(href="#" download)
+								.row
+									.col-auto
+										+icon('file')
+									.col
+										.small Публичная оферта
+										.smallest 18.04.2023 / pdf 15 mb.
+						.col-12
+							.row.align-items-center
+								.col-md
+									+policy
+								.col-auto.text-end 
+									button.btn.btn-primary(type="submit"  ) Направить пожертвование
 	// #modal-call
 	
 	// end modals

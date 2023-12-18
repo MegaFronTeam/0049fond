@@ -1,0 +1,43 @@
+mixin sSearch(data)
+	// start sSearch
+	+b.SECTION.sSearch.section#sSearch&attributes(attributes)
+		.container
+			.row
+				.col-sm
+					+b.search-block
+						+input("Поиск по названию")
+						button
+							+icon("search")
+				.col-sm-auto
+					button.btn.btn-primary(type="button") Найти
+			+b.filter-search.active
+				+e.toggle.dd-head-js Поиск по критериям
+					+e.icon
+				+e.body.active
+					+b.form-wrap.row
+						.col-lg-4
+							+input("Выберите тип поддержки",'select','Жизненные ситуации')
+						.col-lg-4
+							+input("Выберите получателя",'select','Получатель поддержки')
+						.col-lg-4
+							+input("Выберите регион",'select','Регион')
+
+			+e.group.section
+				h2 Недвижимость
+				ul.column-2
+					li: a(href="#"): +e.text Льготное обеспечение <br> жильем
+					li: a(href="#"): +e.text Приобретение садовых участков
+					li: a(href="#"): +e.text Жилищные, жилищно-строительные и гаражные кооперативы
+					li: a(href="#"): +e.text Компенсация расходов на жильё
+			+e.group.section
+				h2 Социальная поддержка
+				ul
+					li: a(href="#"): +e.text Инвалидность
+					li: a(href="#"): +e.text Компенсация ТСР через СФР
+					li: a(href="#"): +e.text Санаторно-курортное лечение через СФР
+					li: a(href="#"): +e.text Обеспечение ТСР сверх Федерального перечня
+					li: a(href="#"): +e.text Обеспечение ТСР через СФР
+					li: a(href="#"): +e.text Приобретение билетов  вне очереди
+			.text-center
+				a.btn.btn-primary(href="#") Показать всех
+	// end sSearch

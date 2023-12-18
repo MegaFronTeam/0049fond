@@ -1,0 +1,24 @@
+mixin sPartners(data)
+	// start sPartners
+	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					.col
+						h2 Партнеры фонда
+					.col-auto
+						.control-wrap
+							+arrow()
+			+e.slider--js.swiper
+				.swiper-wrapper
+					- for (var x = 1; x < 5; x++)
+						+e.slide.swiper-slide
+							+e.img-wrap
+								+img(`img/logo-${x}.png`)
+							+e.title Наименование партнера
+					- for (var x = 1; x < 5; x++)
+						+e.slide.swiper-slide
+							+e.img-wrap
+								+img(`img/logo-${x}.png`)
+							+e.title Наименование партнера
+	// end sPartners

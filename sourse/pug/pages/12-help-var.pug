@@ -1,0 +1,36 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sPartners/_sPartners.pug 
+include ../blocks/sSearch/_sSearch.pug 
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'inner-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Меры поддержки'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+top-nav
+	main
+		+page-head("hide", title,title)
+		+b.head-caption.section.container
+			.row
+				.col-lg-6
+					p Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада в значительной степени обусловливает важность распределения внутренних резервов и ресурсов. Следует отметить, что укрепление и развитие внутренней структуры обеспечивает актуальность поставленных обществом задач. Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности выявляет срочную потребность поэтапного и последовательного развития общества. Современные технологии достигли такого уровня, что укрепление и развитие внутренней структуры требует от нас анализа вывода текущих активов. Каждый из нас понимает очевидную вещь: начало повседневной работы по формированию позиции прекрасно подходит для реализации первоочередных требований.
+		+sSearch
+	+footer
+      
+
+
+

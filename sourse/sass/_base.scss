@@ -324,9 +324,7 @@ ul {
 .swiper-button-hand {
 	width: var(--swiperArrowSize);
 	height: var(--swiperArrowSize);
-	border-radius: 50%;
-	background-color: var(--swiperBgDef);
-	border: 2px solid var(--swiperBorderColorDef);
+	border-radius: 50%; 
 	color: var(--swiperColorDef);
 	@include bgs;
 	z-index: 300;
@@ -346,7 +344,9 @@ ul {
 	}
 
 	.icon {
-		font-size: rem(12);
+		font-size: rem(14);
+		fill: none;
+		stroke: currentColor;
 	}
 
 	&::after {
@@ -667,5 +667,106 @@ h1{
 		line-height: 100%; /* 24px */
 		margin-bottom: 1.2em;
 		color: var(--Grey, #C6C6C6);
+	}
+}
+
+.head-caption{
+	.row{
+		--bs-gutter-y: 1rem
+	}
+	&__text{
+		display: flex;
+		flex-direction: column;
+		@include media-breakpoint-up(xl) {
+			max-width: 323px;
+		}
+		display: flex;
+		flex-direction: column;
+		p{
+			font-size: rem(20);
+		}
+	}
+}
+
+.panel-btns{
+	border-radius: var(--Corner_radius_default, 8px);
+	background: var(--LightBG, #FDF1DB);
+	padding: 32px;
+	p{
+		font-size: rem(20);
+		line-height: 1.4;
+	}
+	.row{
+		--bs-gutter-y: 1rem;
+		align-items: center;
+	}
+}
+
+.file-download{
+	border-radius: var(--Corner_radius_default, 8px);
+		background: var(--LightGrey, #EDEDED);
+		padding: 16px;
+		display: block;
+		color: $body-color;
+		.icon{
+			font-size: 24px;
+			stroke: currentColor;
+			fill: none;
+			color: $secondary;
+		}
+		.smalles{
+			color: #595D6C;
+		}
+		.row{
+			--bs-gutter-x: 16px;
+			align-items: center;
+		}
+}
+
+.filter-search{
+	margin-top: 40px;
+	border: 1px solid var(--Stroke, #D8D8D8);
+	.row{
+		--bs-gutter-y: 1rem;
+	}
+	&.active{
+		--rotate:0
+	}
+	&__toggle{
+		position: relative;
+		padding: 2rem;
+		cursor: pointer;
+		font-size: rem(24);
+		line-height: 1;
+	}
+	&__body{
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-bottom: 2rem;
+	}
+	&__icon{
+		width: 2rem;
+		height: 2rem;
+		border: 1px solid $secondary;
+		position: absolute;
+		right: 2rem;
+		top: 2rem;
+		position: absolute;
+		border-radius: 4px;
+		&::before,
+		&::after{
+			content: '';
+			position: absolute;
+			width: 12px;
+			height: 1.2px;
+			top: 50%;
+			left: 50%;
+			translate: -50%;
+			background-color: $secondary;
+		}
+		&::after{
+			@include mt;
+			rotate: var(--rotate, 90deg);
+		}
 	}
 }

@@ -1,0 +1,60 @@
+// start .sPartners
+.sPartners {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__slider{
+		@include media-breakpoint-up(xl) {
+			overflow: hidden;
+		}
+		overflow: visible;
+		// margin-right: -1px;
+	}
+	&__slide{ 
+		max-width: calc(25% - 20px * 3 / 4);
+		min-width: 220px;
+		// max-width: 324px;
+		text-align: center;
+		margin-right: 20px;
+	}
+	&__img-wrap{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: var(--Corner_radius_default, 8px);
+		border: 1px solid var(--Stroke, #D8D8D8);
+		aspect-ratio: 325 / 177;
+		margin-bottom: 20px;
+	}
+	&__title{
+		opacity: 0.5;
+	}
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPartners
+
+.control-wrap{
+	position: relative;
+	width: 78px;
+}

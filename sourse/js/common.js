@@ -365,12 +365,12 @@ function eventHandler() {
 	// JSCCommon.animateScroll();
 	
 	// JSCCommon.CustomInputFile(); 
-	var x = window.location.host;
-	let screenName;
-	screenName = 'screen/'+document.body.dataset.bg;
-	if (screenName && x.includes("localhost:30")) {
-		document.body.insertAdjacentHTML("beforeend", `<div class="pixel-perfect" style="background-image: url(${screenName});"></div>`);
-	}
+	// var x = window.location.host;
+	// let screenName;
+	// screenName = 'screen/'+document.body.dataset.bg;
+	// if (screenName && x.includes("localhost:30")) {
+	// 	document.body.insertAdjacentHTML("beforeend", `<div class="pixel-perfect" style="background-image: url(${screenName});"></div>`);
+	// }
 
 
 	function setFixedNav() {
@@ -462,6 +462,14 @@ function eventHandler() {
 		navigation: {
 			nextEl: '.sNews .swiper-button-next',
 			prevEl: '.sNews .swiper-button-prev',
+		}
+	});
+	new Swiper('.sPartners__slider--js', {
+		...opt,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '.sPartners .swiper-button-next',
+			prevEl: '.sPartners .swiper-button-prev',
 		}
 	});
 

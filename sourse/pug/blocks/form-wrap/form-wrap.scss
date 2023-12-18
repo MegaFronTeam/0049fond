@@ -6,8 +6,16 @@
 		&__input{
 			// @extend .form-control;
 		//  outline: 0 !important;
-		 resize: none;
+		//  resize: none;
  	}
+	&__input-title{
+		color: var(--txt, #595D6C); 
+		font-size: 16px; 
+		font-weight: 600;
+		line-height: 140%; /* 22.4px */
+		margin-bottom: 8px;
+		display: block;
+	}
  	&__btn{
  		cursor: pointer;
  	}
@@ -15,6 +23,11 @@
  		width: 100%;
  		display: block;
  	}
+	&__policy{
+		max-width: 380px;
+		font-size: 14px;
+		color: var(--txt, #595D6C);
+	}
 }
 
 

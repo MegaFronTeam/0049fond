@@ -1,0 +1,76 @@
+// start .sYourHelp
+.sYourHelp {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+		display: grid;
+		@include media-breakpoint-up(xl) {
+
+			grid-template-columns:  458px repeat(2,  1fr) ;
+		}
+		@include media-breakpoint-up(sm) {
+
+			grid-template-columns:  repeat(2, 1fr) ;
+		}
+		gap:  10px;
+		// align-items: center;
+		// grid-template-columns: 1fr 1fr;
+	}
+	&__text{
+		max-width: 269px;
+	}
+	&__item{
+		border-radius: var(--Corner_radius_default, 8px);
+		background: var(--LightBG, #FDF1DB);
+		padding: 30px;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		line-height: 1.4;
+		text-wrap: balance;
+		img{
+			margin-right: 16px;
+		}
+		&:nth-child(3),
+		&:nth-child(4)
+		{
+			background: rgba(147, 96, 55, 0.10);
+
+ 
+		}
+	}
+	&__title{
+		color: $secondary;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.4;
+		@include media-breakpoint-up(sm) {
+			grid-column: 1  / span 2;
+		}
+		@include media-breakpoint-up(xl) {
+			grid-column: auto;
+			grid-row: 1  / span 2 ;
+		}
+		align-self: center;
+	}	
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sYourHelp

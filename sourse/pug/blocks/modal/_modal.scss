@@ -11,10 +11,28 @@
 	background-color: #fff;
 	max-width: 100%;
 	position: relative;
-	width: rem(1500);
+	width: rem(769);
 	// min-height: 100%; 
 	padding: 40px;
-
+	&__head{
+		background: #FFF;
+		padding: 24px 40px;
+		background: var(--LightBG, #FDF1DB);
+	}
+	&__title{
+			font-weight: bold;
+			font-size: 20px;
+	}
+	.text-dark,
+	p{
+		font-size: 20px;
+	}
+	&__body{
+		padding: 24px 40px;
+	}
+	.row{
+		--bs-gutter-y: 1rem;
+	}
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
