@@ -1,0 +1,37 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sPartners/_sPartners.pug 
+include ../blocks/sSearch/_sSearch.pug 
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'inner-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Результаты поискаи'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+top-nav
+	main
+		+page-head("hide", title,title)
+		.container.section
+			+b.search-list
+				- for (var x = 0; x < 8; x++)
+					+e.item(href="#")
+						+e.title  Результат поиска
+						p Есть над чем задуматься: независимые государства и по сей день остаются уделом либералов, которые жаждут быть преданы социально-демократической анафеме. Задача организации, в особенности же высокотехнологичная концепция общественного уклада в значительной степени обусловливает важность первоочередных требований.
+	+footer
+      
+
+
+

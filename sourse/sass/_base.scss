@@ -770,3 +770,27 @@ h1{
 		}
 	}
 }
+
+.search-list{
+	counter-reset: num;
+	&__item{
+		display: block;
+		color: $body-color;
+		padding: rem(40);
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-radius: var(--Corner_radius_default, 8px);
+		border: 1px solid var(--Stroke, #D8D8D8);
+		&:hover{
+			background-color: rgba(#D8D8D8, 0.2);
+		}
+	}
+	&__title{
+		color: $secondary;
+		font-size: 20px;
+		&::before {
+			content: counter(num) '.';
+			counter-increment: num;
+		}
+	}
+}

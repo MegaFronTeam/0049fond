@@ -14,3 +14,4 @@
 1. <https://megafronteam.github.io/0049fond/public/00-modal>
 2. <https://megafronteam.github.io/0049fond/public/10-how-help>
 3. <https://megafronteam.github.io/0049fond/public/12-help-var>
+4. <https://megafronteam.github.io/0049fond/public/13-search>
