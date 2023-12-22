@@ -10,8 +10,10 @@
 10. <https://megafronteam.github.io/0049fond/public/05-legal-info>
 11. <https://megafronteam.github.io/0049fond/public/06-management>
 12. <https://megafronteam.github.io/0049fond/public/08-contacts>
-***
 1. <https://megafronteam.github.io/0049fond/public/00-modal>
+***
 2. <https://megafronteam.github.io/0049fond/public/10-how-help>
 3. <https://megafronteam.github.io/0049fond/public/12-help-var>
 4. <https://megafronteam.github.io/0049fond/public/13-search>
+***
+1. <https://megafronteam.github.io/0049fond/public/12-help-var-artical>

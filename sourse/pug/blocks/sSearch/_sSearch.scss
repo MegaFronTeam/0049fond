@@ -29,6 +29,19 @@
 		a{
 			min-height: 148px;
 		}
+		a{
+			display: block;
+			padding: 40px;
+			font-size: 24px;color: #000;
+			border-radius: var(--Corner_radius_default, 8px);
+			background: linear-gradient(270deg, #FDF1DB 6.71%, #F4F4F4 99.91%);
+			height: 100%;
+			text-wrap: balance;
+			line-height: 1.4;
+			&:hover{
+				translate: 0 -10px;
+			}
+		}
 		&.column-2{
 			grid-template-columns: repeat(auto-fill, minmax(600px, 1fr) ) ;
 			a{
@@ -40,19 +53,6 @@
 		list-style: none;
 	}
 
-	a{
-		display: block;
-		padding: 40px;
-		font-size: 24px;color: #000;
-		border-radius: var(--Corner_radius_default, 8px);
-		background: linear-gradient(270deg, #FDF1DB 6.71%, #F4F4F4 99.91%);
-		height: 100%;
-		text-wrap: balance;
-		line-height: 1.4;
-		&:hover{
-			translate: 0 -10px;
-		}
-	}
 	&__text{
 		max-width: 340px;
 	}

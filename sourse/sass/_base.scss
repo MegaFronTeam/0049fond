@@ -702,17 +702,20 @@ h1{
 	}
 }
 
-.file-download{
+.gray-panel{
 	border-radius: var(--Corner_radius_default, 8px);
 		background: var(--LightGrey, #EDEDED);
 		padding: 16px;
 		display: block;
 		color: $body-color;
+
+	}
+	.file-download{
 		.icon{
 			font-size: 24px;
+			color: $secondary;
 			stroke: currentColor;
 			fill: none;
-			color: $secondary;
 		}
 		.smalles{
 			color: #595D6C;
@@ -793,4 +796,33 @@ h1{
 			counter-increment: num;
 		}
 	}
+}
+
+table{
+	// margin-bottom: 24px;
+	vertical-align: middle;
+	color: var(--txt, #595D6C);
+	td{
+		padding-bottom: 20px;
+		padding-right: 10px;
+	}
+}
+
+.badge{
+	display: inline-block;
+	padding: 2px 8px;
+	border: 1px solid currentColor;
+	border-radius: var(--Corner_radius_default, 8px);
+	font-size: rem(14);
+	& + .badge{
+		margin-left: rem(8);
+	}
+
+}
+.badge-secondary{
+	
+	color: $secondary;
+}
+.border-secondary{
+	border: 1px solid $secondary;
 }

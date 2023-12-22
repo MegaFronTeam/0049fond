@@ -30,6 +30,10 @@
 	.container{
 		max-width: 1144px;
 	}
+	ul{
+		margin-left: 20px;
+		margin-bottom: 1rem;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

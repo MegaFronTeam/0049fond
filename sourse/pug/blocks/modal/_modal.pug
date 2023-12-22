@@ -48,13 +48,12 @@ mixin modal()
 						.col-12
 							+e.input-wrap.form-group
 								+e.SPAN.input-title Назначение платежа
-								+e.TEXTAREA.input.form-control(name=name placeholder="Сообщение")
-									| На организацию и оказание поддержки и помощи лицам, принимавшим участие в специальной военной операции
+								.gray-panel На организацию и оказание поддержки и помощи лицам, принимавшим участие в специальной военной операции
 						.col-lg-12
 							+input("example@mail.ru",'tel','E-mail для квитанции')
 					
 						.col-12
-							+b.file-download(href="#" download)
+							+b.file-download(href="#" download).gray-panel
 								.row
 									.col-auto
 										+icon('file')
