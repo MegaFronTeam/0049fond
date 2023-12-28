@@ -354,7 +354,7 @@ const $ = jQuery;
 
 function eventHandler() { 
 	JSCCommon.modalCall();
-	// JSCCommon.tabscostume('tabs');
+	JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
 	// JSCCommon.sendForm();
@@ -496,6 +496,22 @@ function eventHandler() {
 		}, { Toolbar });
 	};
 
+
+	document.addEventListener('click', (event) => {
+		let customInputs = document.querySelectorAll('.custom-input-wrap .custom-input__input');
+		let customInputTarget = event.target.closest('.custom-input-wrap .custom-input__input');
+		if(customInputTarget) {
+			if(customInputTarget.dataset.face === 'legal') {
+				document.querySelectorAll('.form-wrap__legal-col').forEach((item) => {
+					item.classList.add('active');
+				})
+			} else {
+				document.querySelectorAll('.form-wrap__legal-col').forEach((item) => {
+					item.classList.remove('active');
+				})
+			}
+		}
+	})
 
 };
 if (document.readyState !== 'loading') {

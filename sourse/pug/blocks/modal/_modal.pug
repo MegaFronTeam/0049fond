@@ -67,5 +67,71 @@ mixin modal()
 								.col-auto.text-end 
 									button.btn.btn-primary(type="submit"  ) Направить пожертвование
 	// #modal-call
+
+	//  start modals
+	div(id="modal-call3"  style="display: none" )
+		+b.modal-win--appeal.p-0
+			+e.head
+				+e.title Направить обращение
+			+e.body
+				+form-wrap
+					.row
+						.col-12
+							+input("Алтайский край",'select', 'Субъект проживания')
+						.col-12
+							//- +input("Алтайский край",'select', 'Адресат (филиал)')
+							.form-wrap__input-wrap.form-group
+								label
+									span.form-wrap__input-title
+										| Адресат
+										| 
+										span (филиал)
+									select.form-wrap__input.form-control(name='select' type='select' placeholder='')
+										option(value='Алтайский край') Алтайский край
+										option(value=' placeholder 1')  placeholder 1
+										option(value=' placeholder 2')  placeholder 2
+										option(value=' placeholder 3')  placeholder 3
+										option(value=' placeholder 4')  placeholder 4
+						.col-12
+							.custom-input-wrap
+								+in-c('radio', 'Физическое лицо', 'face')(checked)
+								+in-c('radio', 'Юридическое лицо', 'face')(data-face='legal')
+						+e.legal-col.col-12
+							+input("",'text','Наименование организации')
+						+e.legal-col.col-12
+							+input("",'text','ИНН')
+						+e.legal-col.col-12
+							+input("",'text','Должность')
+						.col-12
+							+input("",'text','Фамилия')
+						.col-md-6
+							+input("",'text','Имя')
+						.col-md-6
+							.form-wrap__input-wrap.form-group
+								label
+									span.form-wrap__input-title
+										| Отчество 
+										| 
+										span (при наличии)
+									input.form-wrap__input.form-control(name='text' type='text' placeholder='')
+						.col-12
+							+input("+7 ___-___-__-__",'tel','Контактный телефон')
+						.col-lg-6 
+							+input("example@mail.ru",'email','Электронная почта')
+						.col-lg-6 
+							+input("example@mail.ru",'email','Подтвердите адрес электронной почты')
+						.col-12 
+							+input("",'text','Фактический адрес проживания')
+						.col-12 
+							+input("Опишите Ваше предложение",'textarea','Текст обращения')
+						.col-12
+							+e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum eleifend velit, ornare mattis ex mattis a. Suspendisse euismod tortor sed ante pretium, quis volutpat augue euismod. Etiam consequat posuere blandit. Fusce eget dolor malesuada, tincidunt turpis at, tempor quam. Quisque non est ex. Nunc molestie erat dolor, non interdum diam varius vel. Vivamus tincidunt facilisis nunc, eu lacinia justo molestie non.
+						.col-12
+							.row.align-items-center
+								.col-md
+									+policy2()
+								.col-auto.text-end 
+									button.btn.btn-primary(type="submit") Направить обращение
+	// #modal-call
 	
 	// end modals

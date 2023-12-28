@@ -62,7 +62,7 @@ mixin in-c(typ="checkbox", text, name= typ )
 		if block
 			block 
 		else
-			+e.SPAN.text.form-check-label= text
+			+e.SPAN.text.form-check-label!= text
  
 mixin add-file(n)
 	+b.add-file
@@ -77,3 +77,8 @@ mixin policy()
 	+e.policy
 		+in-c()(checked)
 			+e.SMALL.text Я принимаю условия публичной оферты и даю согласие на обработку персональных данных
+
+mixin policy2()
+	+e.policy
+		+in-c()(checked)
+			+e.text Я даю согласие на обработку персональных данных
