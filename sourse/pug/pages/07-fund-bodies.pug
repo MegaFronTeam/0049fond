@@ -10,6 +10,10 @@ include ../blocks/sYourHelp/_sYourHelp.pug
 include ../blocks/top-nav/_top-nav.pug 
 include ../blocks/footer/_footer.pug
 
+include ../blocks/sFoundationBodies/_sFoundationBodies.pug
+include ../blocks/sTeam/_sTeam.pug
+include ../blocks/sNews/_sNews.pug
+
 block variables
 	- let  mainPage= 'inner-page' 
 	- let  bg= null
@@ -24,8 +28,15 @@ block pagecontent
 	+top-nav
 	main
 		+page-head("hide", 'Органы фонда', 'О фонде', 'Правление и советы Фонда')
-
-		+sLogos('Новости наблюдательного совета')
+		+b.head-caption--fund.section.container
+			.row
+				.col-xl.order-xl-last
+					+img("img/head-img-11.jpg").res-i
+				+e.text.col-xl-auto
+					p Текст кратко описывающий раздел для наглядности отображения текстовой информации в&nbsp;несколько строк
+					.small.mt-auto Менее важный текст для раскрытия заголовка более содержательный&nbsp;По результатам встречи планируется составление плана наиболее важных модулей и&nbsp;определение проектной группы по&nbsp;каждому модулю проект
+		+sFoundationBodies
+		//- +sLogos('Новости наблюдательного совета')
 	+footer
       
 

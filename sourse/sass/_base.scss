@@ -686,6 +686,17 @@ h1{
 			font-size: rem(20);
 		}
 	}
+	&--fund {
+		.row{
+			--bs-gutter-x: #{rem(20)};
+		}
+		p {
+			color: var(--bl, #000);
+		}
+		.small {
+			color: var(--txt, #595D6C);
+		}
+	}
 }
 
 .panel-btns{

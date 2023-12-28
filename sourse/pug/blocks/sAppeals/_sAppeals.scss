@@ -1,0 +1,36 @@
+// start .sAppeals
+.sAppeals {
+	--sPT: #{rem(40)};
+	--sPB: #{rem(30)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(80)};
+		--sPB: #{rem(60)};
+	}
+	.dd-group {
+		&__content {
+			padding-top: 0;
+		}
+		&__question {
+			.h5 {
+				color: var(--txt, #595D6C);
+				font-weight: 700;
+				line-height: 1.4;
+				margin-bottom: 0;
+			}
+			p {
+				color: var(--txt, #595D6C);
+				line-height: 1.4;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAppeals

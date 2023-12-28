@@ -1,3 +1,14 @@
+mixin teamItem(title='Константин Константинпольский', prof='Должность', text, img='team-item.png')
+	+b.team-item
+		.row
+			+e.caption.col 
+				+e.title!= title
+				+e.prof!= prof
+				if text
+					+e.text!= text
+			+e.img-wrap.col-md-auto 
+				img(src=`img/${img}` alt='').res-i
+
 mixin sTeam(data)
 	// start sTeam
 	+b.sTeam.section#sTeam&attributes(attributes)
@@ -15,13 +26,7 @@ mixin sTeam(data)
 			+e.row.row
 				- for (var x = 0; x < 6; x++)
 					+e.col.col-lg-6
-						+b.team-item
-							.row
-								+e.caption.col 
-									+e.title Константин Константинпольский
-									+e.prof Должность
-								+e.img-wrap.col-md-auto 
-									+img('img/team-item.png').res-i
+						+teamItem
 			.mt-5.text-center
 				a.btn.btn-outline-primary(href="#") Филиалы фонда
 	// end sTeam
