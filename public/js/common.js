@@ -513,6 +513,16 @@ function eventHandler() {
 		}
 	})
 
+	let filepondArr = document.querySelectorAll('.filepond--js');
+	if (filepondArr.length) {
+		filepondArr.forEach((item) => {
+			FilePond.create(item, {
+				labelIdle: 'Прикрепить файл',
+				styleButtonRemoveItemPosition: 'right',
+			});
+		})
+	}
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
