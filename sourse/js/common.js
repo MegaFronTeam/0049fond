@@ -523,6 +523,12 @@ function eventHandler() {
 		})
 	}
 
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	var popover = [...tooltipTriggerList].map((tooltipTriggerElem) => new bootstrap.Popover(tooltipTriggerElem, {
+		offset: [-10, 0], 
+		trigger: 'hover',
+		placement: 'top',
+	}));
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

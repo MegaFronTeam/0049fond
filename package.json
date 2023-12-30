@@ -12,7 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "bootstrap": "^5.3.0",
     "browser-sync": "^2.29.1",
     "browserslist": "^4.21.4",
     "colors": "^1.4.0",
@@ -44,6 +43,8 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.16",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
     "filepond": "^4.30.6",
     "inputmask": "^5.0.8",
     "jquery": "^3.6.3",
