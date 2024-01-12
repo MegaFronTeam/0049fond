@@ -29,6 +29,11 @@ const JSCCommon = {
 				AJAX_FORBIDDEN: "Ошибка при загрузке AJAX: запрещено",
 				IFRAME_ERROR: "Ошибка загрузки iframe",
 			},
+			on: {
+				done: (fancybox, slide) => {
+					JSCCommon.inputMask
+				}
+			}
 		});
 		document.querySelectorAll(".modal-close-js").forEach(el=>{
 			el.addEventListener("click", ()=>{
@@ -151,7 +156,7 @@ const JSCCommon = {
 		// mask for input
 		let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
 		InputTel.forEach(element => element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}"));
-		Inputmask({"mask":"+9(999)999-99-99", showMaskOnHover: false}).mask(InputTel);
+		Inputmask({"mask":"+7 999-999-99-99", showMaskOnHover: false}).mask(InputTel);
 	},
 	// /inputMask
 	sendForm() {
