@@ -1,0 +1,32 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sContact/_sContact.pug 
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/footer/_footer.pug
+include ../blocks/sProcurement/_sProcurement.pug
+
+block variables
+	- let  mainPage= 'inner-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'Закупки'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+top-nav
+	main
+		+page-head("hide", title, 'О фонде', title)
+		+sProcurement
+	+footer
+      
+
+
+

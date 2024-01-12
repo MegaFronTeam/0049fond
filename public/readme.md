@@ -17,3 +17,10 @@
 4. <https://megafronteam.github.io/0049fond/public/13-search>
 ***
 1. <https://megafronteam.github.io/0049fond/public/12-help-var-artical>
+***
+1. <https://megafronteam.github.io/0049fond/public/07-fund-bodies>
+2. <https://megafronteam.github.io/0049fond/public/09-procurement>
+3. <https://megafronteam.github.io/0049fond/public/14-appeals>
+4. <https://megafronteam.github.io/0049fond/public/14-appeals-2>
+5. <https://megafronteam.github.io/0049fond/public/14-appeals-3>
+6. <https://megafronteam.github.io/0049fond/public/03-offices>

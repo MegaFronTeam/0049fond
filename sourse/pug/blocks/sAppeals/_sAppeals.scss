@@ -1,0 +1,91 @@
+// start .sAppeals
+.sAppeals {
+	--sPT: #{rem(40)};
+	--sPB: #{rem(30)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(80)};
+		--sPB: #{rem(60)};
+	}
+	.dd-group {
+		&__content {
+			padding-top: 0;
+		}
+		&__question {
+			.h5 {
+				color: var(--txt, #595D6C);
+				font-weight: 700;
+				line-height: 1.4;
+				margin-bottom: 0;
+			}
+			p {
+				color: var(--txt, #595D6C);
+				line-height: 1.4;
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__search-block {
+		max-width: rem(780);
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__search-row {
+		margin-bottom: rem(20);
+	}
+	.search-block {
+		input {
+			height: auto;
+			padding-top: rem(18);
+			padding-bottom: rem(18);
+		}
+	}
+	&__search-btn {
+		--bs-btn-padding-y: #{rem(15)};
+	}
+	&__search-link {
+		border-radius: rem(8);
+		border: 1px solid #D8D8D8;
+		padding: rem(9.5) rem(15);
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: rem(12);
+		}
+		&:hover {
+			box-shadow: 0 5px 20px rgba(25,28,31,.15);
+		}
+		p {
+			color: $secondary;
+			line-height: 1.4;
+			margin-bottom: 0;
+		}
+		span {
+			font-size: rem(12);
+			line-height: 1.4;
+			color: #000;
+		}
+	}
+	.epmty-search-result{
+		border-radius: var(--Corner_radius_default, 8px);
+			border: 1px solid var(--Stroke, #D8D8D8);
+			padding: rem(24);
+			text-align: center;
+			&__title{
+				color: #936037;
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+			p{
+				font-size: 12px;
+				color: #595D6C;
+				margin-bottom: 0;
+			}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAppeals

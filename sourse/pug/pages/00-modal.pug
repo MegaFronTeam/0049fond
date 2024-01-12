@@ -3,7 +3,7 @@ extends ../layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
-include ../blocks/sForm/_sForm.pug
+include ../blocks/footer/_footer.pug
 
 block variables
 	- let  mainPage= null 
@@ -23,4 +23,5 @@ block pagecontent
 						button.btn.btn-primary(data-src=id data-fancybox).btn-modal-js= name
 				+btn("#modal-call", "Стать партнером")
 				+btn("#modal-call2", "Направить пожертвование")
-	+parts('footer')
+				+btn("#modal-call3", "Направить обращение")
+	+footer

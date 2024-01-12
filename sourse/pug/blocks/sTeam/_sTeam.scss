@@ -103,6 +103,11 @@
 		margin-bottom: auto;
 		padding-bottom: 1rem;
 	}
+	&__text {
+		color: var(--txt, #595D6C);
+		font-size: rem(14);
+		line-height: 1.4;
+	}
 	&--main &__img-wrap{
 		@include media-breakpoint-up(lg) {
 			width: auto  !important;

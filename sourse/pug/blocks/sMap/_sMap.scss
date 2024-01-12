@@ -588,3 +588,17 @@
 			color: #595D6C;
 		}
 }
+
+.popover {
+	z-index: 100;
+	color: #FFF;
+	font-weight: 700;
+	padding: rem(5) rem(10);
+	background-color: #015ca9;
+	border-radius: 10px;
+	&-header {
+		font-size: rem(18);
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
+}

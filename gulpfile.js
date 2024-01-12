@@ -73,7 +73,7 @@ function cleanlibs() {
 
 function copyLibs() {
     return src(npmDist({
-        // copyUnminified: true, 
+        copyUnminified: true, 
         excludes: [
             // '*.map',
             'src/**/*',

@@ -1,0 +1,69 @@
+mixin sAppeals(data)
+	// start sAppeals
+	+b.SECTION.sAppeals.section#sAppeals&attributes(attributes)
+		.container
+			+b.section-title
+				+e.links.row
+					.col-auto
+						a(href="#").active Часто задаваемые вопросы
+					.col-auto
+						a(href="#" data-src='#modal-call3' data-fancybox) Направить обращение
+					.col-auto
+						a(href="#") Статус обращения
+			+ddGroup()
+				+ddGroupItem('Восстановление документов', '', 'active')
+					+e.question
+						.h5 Как восстановить утерянные документы?
+						p Для восстановления документов нужно обратиться в военкомат или по месту прописки
+				+ddGroupItem('Обеспечение техническими средствами реабилитации', '', '')
+					+e.question
+						.h5 Как восстановить утерянные документы?
+						p Для восстановления документов нужно обратиться в военкомат или по месту прописки
+				+ddGroupItem('Вопрос №3', '', '')
+					+e.question
+						.h5 Как восстановить утерянные документы?
+						p Для восстановления документов нужно обратиться в военкомат или по месту прописки
+				+ddGroupItem('Вопрос №4', '', '')
+					+e.question
+						.h5 Как восстановить утерянные документы?
+						p Для восстановления документов нужно обратиться в военкомат или по месту прописки
+	// end sAppeals
+
+mixin sAppeals2(nothing)
+	// start sAppeals
+	+b.SECTION.sAppeals.section#sAppeals&attributes(attributes)
+		.container
+			+b.section-title
+				+e.links.row
+					.col-auto
+						a(href="#") Часто задаваемые вопросы
+					.col-auto
+						a(href="#" data-src='#modal-call3' data-fancybox) Направить обращение
+					.col-auto
+						a(href="#").active Статус обращения
+			+e.search-block
+				+e.search-row.row
+					.col-sm
+						+b.search-block
+							+input("Поиск по названию")
+							button
+								+icon("search")
+					.col-sm-auto
+						+e.search-btn.btn.btn-primary(type="button") Узнать статус
+				if nothing
+					+b.epmty-search-result
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+							<g opacity="0.4">
+								<path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="#936037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M24 16V24" stroke="#936037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M24 32H24.02" stroke="#936037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						+e.title Нет обращений
+						p Убедитесь, что номер обращения введен корректно
+				else
+					+e.search-wrap
+						+e.search-link(href='#')
+							p Обращение №12534
+							span В обработке
+	// end sAppeals

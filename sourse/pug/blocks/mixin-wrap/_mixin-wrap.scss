@@ -139,3 +139,138 @@
 		top: -2px;
 	}
 }
+
+.dd-group {
+	&__item {
+		border: 1px solid var(--Stroke, #D8D8D8);
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+		&.active{
+			--rotate:0;
+		}
+	}
+	&__head {
+		position: relative;
+		padding: rem(16);
+		cursor: pointer;
+		font-size: rem(18);
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		@include media-breakpoint-up(lg) {
+			padding: rem(33) rem(32) rem(33) rem(32);
+			font-size: rem(24);
+		}
+		a {
+			margin-left: rem(24);
+			text-decoration: underline;
+			font-size: rem(14);
+			line-height: 1.4;
+			@include media-breakpoint-up(md) {
+				font-size: rem(18);
+			}
+		}
+	}
+	&__content {
+		display: none;
+		padding: rem(16);
+		@include media-breakpoint-up(lg) {
+			padding: rem(32);
+		}
+		&.active {
+			display: block;
+		}
+	}
+	&__icon{
+		flex: 0 0 auto;
+		width: 2rem;
+		height: 2rem;
+		border: 1px solid $secondary;
+		position: relative;
+		// right: 2rem;
+		// top: 2rem;
+		border-radius: 4px;
+		margin-left: auto;
+		&::before,
+		&::after{
+			content: '';
+			position: absolute;
+			width: 12px;
+			height: 1.2px;
+			top: 50%;
+			left: 50%;
+			translate: -50%;
+			background-color: $secondary;
+		}
+		&::after{
+			@include mt;
+			rotate: var(--rotate, 90deg);
+		}
+	}
+	&__row {
+		--bs-gutter-x: #{rem(20)};
+		--bs-gutter-y: #{rem(12)};
+
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(40);
+		}
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		p {
+			font-size: rem(16);
+			@include media-breakpoint-up(lg) {
+				font-size: rem(18);
+			}
+		}
+		.small {
+			margin-top: auto;
+			color: #595D6C;
+			max-width: rem(323);
+			@include media-breakpoint-up(lg) {
+				font-size: rem(14);
+			}
+		}
+	}
+	&__team-row {
+		--bs-gutter-x: #{rem(20)};
+		--bs-gutter-y: #{rem(12)};
+		.team-item__img-wrap {
+			@include media-breakpoint-up(lg)  {
+				transform: translateX(rem(34));
+			}
+		}
+	}
+	&__news {
+		.h5 {
+			color: var(--txt, #595D6C);
+			font-size: rem(18);
+			line-height: 1.4;
+			margin-bottom: rem(30);
+			@include media-breakpoint-up(lg) {
+				font-size: rem(24);
+				margin-bottom: rem(40);
+			}
+		}
+		&-btn {
+			margin-top: rem(20);
+			max-width: max-content;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		.card-item {
+			flex-direction: column;
+			picture {
+				@include media-breakpoint-down(md) {
+					width: 100%;
+					flex: none;
+				}
+			}
+		}
+	}
+}

@@ -9,7 +9,7 @@ const JSCCommon = {
 			trapFocus: false,
 			placeFocusBack: false,
 			infinite: false,
-			type: 'html',
+			type: 'inline',
 			dragToClose: false,
 			autoFocus: false,
 			groupAll: false,
@@ -31,7 +31,10 @@ const JSCCommon = {
 			},
 			on: {
 				done: (fancybox, slide) => {
-					JSCCommon.inputMask
+					setTimeout(() => {
+						
+						JSCCommon.inputMask
+					}, 1000);
 				}
 			}
 		});
@@ -156,7 +159,14 @@ const JSCCommon = {
 		// mask for input
 		let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
 		InputTel.forEach(element => element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}"));
-		Inputmask({"mask":"+7 999-999-99-99", showMaskOnHover: false}).mask(InputTel);
+		Inputmask({"mask":"+7 999-999-99-99", showMaskOnHover: false}).mask(InputTel); 
+
+
+		let validator = $('form').jbvalidator({
+			errorMessage: true,
+			successClass: true,	
+			language: 'ru-validator.json'
+	});
 	},
 	// /inputMask
 	sendForm() {
@@ -359,7 +369,7 @@ const $ = jQuery;
 
 function eventHandler() { 
 	JSCCommon.modalCall();
-	// JSCCommon.tabscostume('tabs');
+	JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
 	// JSCCommon.sendForm();
@@ -500,6 +510,40 @@ function eventHandler() {
 			},
 		}, { Toolbar });
 	};
+
+
+	document.addEventListener('click', (event) => {
+		let customInputs = document.querySelectorAll('.custom-input-wrap .custom-input__input');
+		let customInputTarget = event.target.closest('.custom-input-wrap .custom-input__input');
+		if(customInputTarget) {
+			if(customInputTarget.dataset.face === 'legal') {
+				document.querySelectorAll('.form-wrap__legal-col').forEach((item) => {
+					item.classList.add('active');
+				})
+			} else {
+				document.querySelectorAll('.form-wrap__legal-col').forEach((item) => {
+					item.classList.remove('active');
+				})
+			}
+		}
+	})
+
+	let filepondArr = document.querySelectorAll('.filepond--js');
+	if (filepondArr.length) {
+		filepondArr.forEach((item) => {
+			FilePond.create(item, {
+				labelIdle: 'Прикрепить файл',
+				styleButtonRemoveItemPosition: 'right',
+			});
+		})
+	}
+
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	var popover = [...tooltipTriggerList].map((tooltipTriggerElem) => new bootstrap.Popover(tooltipTriggerElem, {
+		offset: [-10, 0], 
+		trigger: 'hover',
+		placement: 'top',
+	}));
 
 
 };
