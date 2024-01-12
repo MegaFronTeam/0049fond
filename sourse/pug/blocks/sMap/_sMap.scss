@@ -1,9 +1,13 @@
 // start .sMap
+.page-head{
+	position: relative;
+	z-index: 2;
+}
 .sMap {
 	--sPT: #{rem(20)};
 	position: relative;
-	overflow: hidden;
-	z-index: 2;
+	// overflow: hidden;
+	// z-index: 2;
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	&__row{
@@ -311,6 +315,7 @@
 		margin-bottom: 4px;
 	}
 	&__item{
+		background-color: #fff;
 		p{
 			margin-bottom: 0;
 		}
@@ -601,4 +606,21 @@
 		line-height: 1.4;
 		margin-bottom: 0;
 	}
+}
+
+.f-panzoom{
+	overflow: visible;
+	// z-index: -1;
+}
+.sMap__footer{
+	.search-block input,
+	.radios{
+		background-color: #fff;
+	}
+	z-index: 2;
+	position: relative;
+}
+.epmty-search-result{
+	background-color: #fff;
+
 }
