@@ -101,6 +101,7 @@
 	overflow: hidden;
 	opacity: 0;
 	pointer-events: none;
+	z-index: 900;
 	&.active {
 		opacity: 1;
 		pointer-events: all;
