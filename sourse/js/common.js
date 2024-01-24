@@ -73,7 +73,7 @@ const JSCCommon = {
     const menu = document.querySelector('.menu-mobile--js');
     toggle.forEach((el) => el.classList.toggle('on'));
     menu.classList.toggle('active');
-    [document.body, document.querySelector('html')].forEach((el) => el.classList.toggle('fixed'));
+    // [document.body, document.querySelector('html')].forEach((el) => el.classList.toggle('fixed'));
   },
   closeMenu() {
     const toggle = document.querySelectorAll('.toggle-menu-mobile--js');
@@ -81,7 +81,7 @@ const JSCCommon = {
     toggle.forEach((element) => element.classList.remove('on'));
     if (menu) {
       menu.classList.remove('active');
-      [document.body, document.querySelector('html')].forEach((el) => el.classList.remove('fixed'));
+      // [document.body, document.querySelector('html')].forEach((el) => el.classList.remove('fixed'));
     }
   },
   mobileMenu() {
@@ -94,11 +94,11 @@ const JSCCommon = {
       { passive: true },
     );
 
-    window.addEventListener('resize', () => {
-        if (window.matchMedia('(min-width: 992px)').matches) this.closeMenu();
-      },
-      { passive: true },
-    );
+    // window.addEventListener('resize', () => {
+    //     if (window.matchMedia('(min-width: 992px)').matches) this.closeMenu();
+    //   },
+    //   { passive: true },
+    // );
   },
 
 	// tabs  .
@@ -164,9 +164,21 @@ const JSCCommon = {
 
 		let validator = $('form').jbvalidator({
 			errorMessage: true,
-			successClass: true,	
-			language: 'ru-validator.json'
-	});
+			//successClass: true,
+			language: '/ru-validator.json'
+		});
+		validator.validator.custom = function (el, event) {
+			if ($(el).is('[name=email_confirm]')) {
+				if ($(el).closest('form').find('input[name=email]').val() !== $(el).val()) {
+					return 'Подтвердите адрес электронной почты.';
+				}
+			}
+			if ($(el).is('[name=preview_text]')) {
+				if (!/^[?!,.а-яА-ЯёЁ0-9\s]+$/.test($(el).val()) && $(el).val().length) {
+					return 'Ошибка в символе.';
+				}
+			}
+		}
 	},
 	// /inputMask
 	sendForm() {
@@ -531,7 +543,7 @@ function eventHandler() {
 	let filepondArr = document.querySelectorAll('.filepond--js');
 	if (filepondArr.length) {
 		filepondArr.forEach((item) => {
-			FilePond.create(item, {
+			pond = FilePond.create(item, {
 				labelIdle: 'Прикрепить файл',
 				styleButtonRemoveItemPosition: 'right',
 			});

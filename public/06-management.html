@@ -45,8 +45,38 @@
 			<div class="top-nav block-with-lazy">
 				<div class="container">
 					<div class="row">
-						<div class="col-auto">
+						<div class="top-nav__col col-auto">
 							<div class="toggle-menu-mobile toggle-menu-mobile--js btn btn-light"><span></span>
+							</div>
+							<div class="menu-mobile menu-mobile--js">
+								<ul>
+									<li><a href="#">Главная </a></li>
+									<li><a href="#">Меры поддержки</a></li>
+									<li><a href="#">О фонде</a>
+										<ul>
+											<li><a href="#">Документы Фонда  </a></li>
+											<li><a href="#">Руководство Фонда</a></li>
+											<li><a href="#">Органы Фонда </a></li>
+											<li><a href="#">Контакты</a></li>
+											<li><a href="#">Закупки</a></li>
+											<li><a href="#">Как помочь?</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Медиа</a>
+										<ul>
+											<li><a href="#">Новости </a></li>
+											<li><a href="#">Мультимедиа</a></li>
+											<li><a href="#">Пресс-кит</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Филиалы</a></li>
+									<li><a href="#">Обращения граждан</a>
+										<ul>
+											<li><a href="#">Часто задаваемые вопросы </a></li>
+											<li><a href="#">Направить обращение</a></li>
+										</ul>
+									</li>
+								</ul>
 							</div>
 						</div>
 						<div class="col-lg-auto col"><a href="/"><img class="res-i" src="img/svg/logo.svg" alt=""/></a></div>
@@ -582,6 +612,22 @@
 		</div>
 		<!-- #modal-call-->
 		<!-- end modals-->
+		<!--  start modals-->
+		<div id="modal-thanks" style="display: none">
+			<div class="modal-win modal-win--thanks"><img src="img/svg/alert-circle.svg" alt="" loading="lazy"/>
+				<p>Спасибо за&nbsp;ваше обращение, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время!</p>
+				<a class="modal-win__btn btn btn-primary modal-close-js" href="#">Закрыть
+				</a>
+			</div>
+		</div>
+		<!--  start modals-->
+		<div id="modal-thanks" style="display: none">
+			<div class="modal-win modal-win--thanks"><img src="img/svg/alert-circle.svg" alt="" loading="lazy"/>
+				<p>Спасибо за ваше пожертвование!</p>
+				<a class="modal-win__btn btn btn-primary modal-close-js" href="#">Закрыть
+				</a>
+			</div>
+		</div>
 		<script src="libs/jquery/jquery.min.js"></script>
 		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
 		<script src="libs/swiper/swiper-bundle.min.js"> </script>

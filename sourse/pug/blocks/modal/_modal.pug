@@ -136,3 +136,17 @@ mixin modal()
 	// #modal-call
 	
 	// end modals
+
+	//  start modals
+	div(id="modal-thanks"  style="display: none" )
+		+b.modal-win--thanks
+			+img('img/svg/alert-circle.svg')
+			p Спасибо за&nbsp;ваше обращение, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время!
+			+e.btn.btn.btn-primary.modal-close-js(href='#') Закрыть
+
+	//  start modals
+	div(id="modal-thanks"  style="display: none" )
+		+b.modal-win--thanks
+			+img('img/svg/alert-circle.svg')
+			p Спасибо за ваше пожертвование!
+			+e.btn.btn.btn-primary.modal-close-js(href='#') Закрыть

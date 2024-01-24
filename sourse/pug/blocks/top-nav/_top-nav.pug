@@ -28,9 +28,34 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			.row
-				.col-auto
+				+e.col.col-auto
 					+b.toggle-menu-mobile--js.btn.btn-light
 						span
+					+b.menu-mobile--js
+						ul
+							li: a(href="#") Главная 
+							li: a(href="#") Меры поддержки
+							li
+								a(href="#") О фонде
+								ul
+									li: a(href="#") Документы Фонда  
+									li: a(href="#") Руководство Фонда
+									li: a(href="#") Органы Фонда 
+									li: a(href="#") Контакты
+									li: a(href="#") Закупки
+									li: a(href="#") Как помочь?
+							li
+								a(href="#") Медиа
+								ul
+									li: a(href="#") Новости 
+									li: a(href="#") Мультимедиа
+									li: a(href="#") Пресс-кит
+							li: a(href="#") Филиалы
+							li
+								a(href="#") Обращения граждан
+								ul
+									li: a(href="#") Часто задаваемые вопросы 
+									li: a(href="#") Направить обращение
 				.col-lg-auto.col
 					a(href="/")
 						img(src="img/svg/logo.svg", alt="").res-i 
