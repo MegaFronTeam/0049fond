@@ -139,6 +139,9 @@
 		}
 	}
 	// 
+	&__addr {
+		max-width: rem(251);
+	}
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}

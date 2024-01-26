@@ -20,7 +20,12 @@
 	&__item{
 
 	}
-
+	.card-item {
+		.h5 {
+			font-size: rem(20);
+			margin-bottom: rem(12);
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

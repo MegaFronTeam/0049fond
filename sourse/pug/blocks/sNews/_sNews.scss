@@ -165,11 +165,18 @@
 	// justify-content: space-between;
 	// margin: 0 10px;
 	// max-width: 533px;
+	.h5 {
+		font-size: rem(20);
+		font-weight: 700;
+		line-height: 1.4;
+		margin-bottom: rem(12);
+		color: #000;
+	}
 	p {
-		font-size: rem(16);
-		// font-weight: 700;
+		font-size: rem(14);
+		font-weight: 400;
+		line-height: 1.4;
 		margin-bottom: 20px;
-		// max-width: rem(361);
 	}
 	p, span {
 		

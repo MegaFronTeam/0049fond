@@ -621,6 +621,19 @@ h1{
 		font-weight: bold;
 		line-height: 1;
 	}
+	p {
+		color: $dark;
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: 1.4;
+		margin-bottom: 0;
+		max-width: rem(1014);
+		margin-top: rem(20);
+		@include media-breakpoint-up(lg) {
+			font-size: rem(20);
+			margin-top: rem(40);
+		}
+	}
 }
 
 .page-artical h1{

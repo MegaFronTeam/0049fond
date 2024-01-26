@@ -50,6 +50,7 @@ mixin page-head(date,t,...items)
 					a(href="#").back.text-body
 						+icon("arrow-left")
 				h1= t
+				block
 			if date && date !=='hide'
 				.date-artical= date
 

@@ -23,13 +23,31 @@
 		height: auto;
 	}
 	p{
-		font-size: rem(20);
+		font-size: rem(18);
+		@include media-breakpoint-up(lg) {
+			font-size: rem(24);
+		}
 		a{
 			color: $body-color;
 		}
 	}
 	.soc{
 		margin-top: 40px;
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(40);
+		}
+	}
+	&__text {
+		color: $dark;
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: 1.4;
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(lg) {
+			font-size: rem(20);
+			margin-bottom: rem(40);
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
